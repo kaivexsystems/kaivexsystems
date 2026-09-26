@@ -1,0 +1,42 @@
+# Kaivex Systems
+
+> Dual-engine growth infrastructure and marketing systems designed to add 10+ qualified leads every month for B2B founders, coaches, consultants, and trade contractors.
+
+## Overview
+Kaivex Systems (founded by Ahmad Farooq and Ayaan Habib) engineers custom acquisition infrastructure that eliminates referral dependency and erratic sales pipelines. Rather than vanity metrics or surface-level marketing, Kaivex develops and deploys operational growth assets.
+
+## Core Growth Engines
+
+### 1. B2B Client Acquisition Engine
+- **Target Audience**: B2B Founders, SaaS executives, Agencies, High-Ticket Coaches, and Specialized Consultants.
+- **Core Infrastructure**:
+  - Interactive scorecard and diagnostic evaluation funnels.
+  - C-suite authority ghostwriting and thought leadership positioning (e.g., LinkedIn).
+  - Dedicated multi-domain SMTP outbound infrastructure with guaranteed deliverability.
+  - Automated omni-channel follow-up sequences.
+- **Outcome**: 10+ high-intent qualified sales calls booked each month without cold calling grind.
+
+### 2. Trade Contractors Speed-to-Lead Engine
+- **Target Audience**: HVAC, Roofing, Plumbing, Electrical, and Specialized Trade Contractors.
+- **Core Infrastructure**:
+  - Sub-60-second automated speed-to-lead response pipelines.
+  - Missed-call AI auto-textback dispatch.
+  - Cloud VoIP and Twilio-powered smart call routing.
+  - Dedicated outbound caller dispatch operations.
+- **Outcome**: Captures inbound demand instantly before competitors, maximizing job quote conversion.
+
+## Key People & Founders
+- **Ahmad Farooq**: Co-Founder & Systems Architect
+- **Ayaan Habib**: Co-Founder & Growth Engineer
+
+## Contact & Official Channels
+- **Website**: https://kaivexsystems.vercel.app
+- **Booking**: https://cal.com/ahmad-farooq-tuwcnw/30min
+- **Email**: kaivexsystems@gmail.com
+- **WhatsApp**: +1 (848) 400-4949 (https://wa.me/18484004949)
+- **Instagram**: @kaivexsystems (https://www.instagram.com/kaivexsystems/)
+- **Locations**: Lahore & Parlin, New Jersey
+
+## Frequently Asked Questions (FAQ)
+- **What makes Kaivex Systems different?** Kaivex builds persistent, owned infrastructure (dedicated SMTP, automated routing, custom diagnostic funnels) rather than temporary ad campaigns or vanity follower tactics.
+- **What is the typical ramp-up timeline?** Initial infrastructure deployment and validation sprints complete within 14 to 30 days.
