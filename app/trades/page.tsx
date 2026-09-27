@@ -8,6 +8,8 @@ import {
   Calendar,
   CheckCircle2,
   Wrench,
+  Scissors,
+  Sparkles,
   ChevronDown,
 } from 'lucide-react';
 import { KaivexLogo } from '@/components/ui/kaivex-logo';
@@ -16,7 +18,7 @@ import { CustomCursor } from '@/components/ui/custom-cursor';
 import { LuminousText } from '@/components/ui/luminous-text';
 
 const WHATSAPP_URL =
-  "https://wa.me/18484004949?text=Hey%20Ahmad,%20I%20run%20a%20trades/home%20services%20business%20and%20want%20to%20stop%20losing%20jobs%20to%20missed%20calls.";
+  "https://wa.me/18484004949?text=Hey%20Ahmad,%20I%20run%20a%20local%20service/trades/salon%20business%20and%20want%20to%20stop%20losing%20clients%20to%20missed%20calls.";
 const CAL_URL = 'https://cal.com/ahmad-farooq-tuwcnw/15min';
 
 export default function TradesLandingPage() {
@@ -36,7 +38,7 @@ export default function TradesLandingPage() {
     }
   };
 
-  const tradesList = [
+  const tradeServices = [
     'Plumbing',
     'HVAC & AC Repair',
     'Roofing & Gutters',
@@ -49,26 +51,37 @@ export default function TradesLandingPage() {
     'General Remodeling',
   ];
 
+  const studioServices = [
+    'Barbershops',
+    'Hair Salons & Stylists',
+    'Beauticians & Lash Techs',
+    'Nail Salons',
+    'Auto Detailing & Tinting',
+    'Medspas & Aesthetics',
+    'Massage & Wellness',
+    'Tattoo Studios',
+  ];
+
   const faqs = [
     {
       q: 'Do I need to change my cell or business phone number?',
-      a: 'No! It connects directly to your existing phone number. You keep the exact same number you already have on your trucks and business cards.',
+      a: 'No! It connects directly to your existing phone number. You keep the exact same number you already have on your cards, storefront, and Instagram/Google profiles.',
     },
     {
       q: 'Do I have to learn complicated computer software?',
-      a: 'Zero. You do not need to learn anything new. Whenever a customer asks for a quote or books an appointment, you get a clean text message right on your regular phone.',
+      a: 'Zero. You do not need to learn anything new. Whenever a customer asks for a quote or books an appointment, you get a clean text notification right on your regular phone.',
     },
     {
-      q: 'What happens when someone calls while my hands are dirty or I am driving?',
-      a: 'The moment you miss the call, our system sends them a friendly text in under 30 seconds asking what they need help with. They text back their address and problem so you do not lose the job.',
+      q: 'What happens when someone calls while my hands are busy with a client or tools?',
+      a: 'The moment you miss the call, our system sends them a friendly text in under 30 seconds: "Hey! I am currently working with a client right now. How can we help you out today?" They reply with what they need so they do not go book with your competitor.',
     },
     {
       q: 'How fast can we set this up for my business?',
       a: 'We set up and test the whole system in 48 to 72 hours. You do not have to lift a finger—we build and test everything for you.',
     },
     {
-      q: 'What if a customer calls late at night?',
-      a: 'The system automatically texts them, lets them know your emergency policy or morning hours, collects their info, and puts them first in line for when you open.',
+      q: 'What if someone calls after closing hours or late at night?',
+      a: 'The system automatically texts them back, lets them know your morning hours or booking link, collects their info, and puts them first in line for when you open.',
     },
   ];
 
@@ -109,11 +122,11 @@ export default function TradesLandingPage() {
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 hover:opacity-90 transition-opacity bg-transparent border-none p-0 cursor-pointer text-left"
-            title="Kaivex Trades - Return to top"
+            title="Kaivex Local Services - Return to top"
           >
             <KaivexLogo variant="full" size="sm" theme={theme} showSublabel={false} animate={false} />
             <span className="hidden sm:inline-block px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-[#2E9C82]/10 text-[#2E9C82] border border-[#2E9C82]/20">
-              TRADES &amp; HOME SERVICES
+              TRADES, BARBERS &amp; LOCAL SERVICES
             </span>
           </button>
 
@@ -124,6 +137,12 @@ export default function TradesLandingPage() {
               className="text-xs font-semibold text-[#6B655F] hover:text-[#14181B] transition hidden md:block bg-transparent border-none cursor-pointer"
             >
               How It Works
+            </button>
+            <button
+              onClick={(e) => scrollToSection(e, 'who-its-for')}
+              className="text-xs font-semibold text-[#6B655F] hover:text-[#14181B] transition hidden md:block bg-transparent border-none cursor-pointer"
+            >
+              Who It&apos;s For
             </button>
             <button
               onClick={(e) => scrollToSection(e, 'faq')}
@@ -151,7 +170,7 @@ export default function TradesLandingPage() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D9551F]/10 text-[#D9551F] border border-[#D9551F]/20 mb-6">
           <PhoneMissed className="w-3.5 h-3.5" />
-          STOP LOSING JOBS TO UNANSWERED CALLS
+          STOP LOSING CLIENTS TO UNANSWERED CALLS
         </div>
 
         {/* Big Bold Plain English Headline with Luminous Typography and NO underline */}
@@ -163,7 +182,7 @@ export default function TradesLandingPage() {
 
         {/* 10-Year-Old Simple Subhead */}
         <p className="text-base sm:text-lg md:text-xl text-[#6B655F] max-w-2xl mb-8 leading-relaxed tracking-[-0.015em]">
-          You are on a ladder or fixing a pipe and can&apos;t answer your phone. We text customers back in 30 seconds, answer their questions, and book the job on your calendar—automatically.
+          You are on a ladder, cutting hair, under a sink, or with a client and can&apos;t answer your phone. We text customers back in 30 seconds, answer their questions, and book the job or appointment on your calendar—automatically.
         </p>
 
         {/* Dual CTA Actions */}
@@ -209,7 +228,7 @@ export default function TradesLandingPage() {
         </div>
       </section>
 
-      {/* 3. THE REAL PROBLEM (The Lost Job Math) */}
+      {/* 3. THE REAL PROBLEM (The Lost Customer Math) */}
       <section
         style={{ borderColor: c.border }}
         className="py-16 px-4 max-w-4xl mx-auto border-t relative z-10"
@@ -232,7 +251,7 @@ export default function TradesLandingPage() {
               <span className="text-2xl font-bold font-serif text-[#D9551F] block mb-2">1</span>
               <h3 className="text-lg font-bold font-serif mb-2">The Customer Calls</h3>
               <p className="text-xs sm:text-sm text-[#6B655F] leading-relaxed">
-                A homeowner has a broken furnace or a leaky toilet. They want help right now and call you first.
+                Someone needs a haircut, an emergency plumber, a fresh set of lashes, or AC repair. They want it booked right now and call you first.
               </p>
             </div>
           </div>
@@ -245,7 +264,7 @@ export default function TradesLandingPage() {
               <span className="text-2xl font-bold font-serif text-[#D9551F] block mb-2">2</span>
               <h3 className="text-lg font-bold font-serif mb-2">You Can&apos;t Answer</h3>
               <p className="text-xs sm:text-sm text-[#6B655F] leading-relaxed">
-                Your hands are busy holding tools, driving, or talking to a client. The call goes to voicemail. Nobody leaves voicemails anymore.
+                Your hands are busy with shears, tools, or treating a client in your chair. The call goes to voicemail. Nobody leaves voicemails anymore.
               </p>
             </div>
           </div>
@@ -256,9 +275,9 @@ export default function TradesLandingPage() {
           >
             <div>
               <span className="text-2xl font-bold font-serif text-[#D9551F] block mb-2">3</span>
-              <h3 className="text-lg font-bold font-serif mb-2">They Hire Your Competitor</h3>
+              <h3 className="text-lg font-bold font-serif mb-2">They Go to Your Competitor</h3>
               <p className="text-xs sm:text-sm text-[#6B655F] leading-relaxed">
-                They immediately dial the next number on Google. In 60 seconds, you just lost a $1,500 to $5,000 job to the guy down the street.
+                They immediately dial the next shop or contractor on Google or Instagram. In under 60 seconds, you just lost a customer who would have spent hundreds or thousands with you.
               </p>
             </div>
           </div>
@@ -303,7 +322,7 @@ export default function TradesLandingPage() {
                 style={{ backgroundColor: 'rgba(255,255,255,0.7)', borderColor: c.border }}
                 className="mt-3 p-3 rounded-xl border font-mono text-xs text-[#14181B]"
               >
-                &quot;Hey! This is Ahmad with Kaivex Plumbing. I&apos;m on a job site right now and couldn&apos;t pick up. How can we help you out today?&quot;
+                &quot;Hey! This is Ahmad. I&apos;m currently working with a client right now and couldn&apos;t pick up. How can we help you out today?&quot;
               </div>
             </div>
           </div>
@@ -318,10 +337,10 @@ export default function TradesLandingPage() {
             </div>
             <div className="flex-1">
               <h3 className="text-lg font-bold font-serif mb-1">
-                Quote &amp; Estimate Booked On Your Phone
+                Appointment or Estimate Booked On Your Phone
               </h3>
               <p className="text-sm text-[#6B655F] leading-relaxed">
-                The customer texts back what is broken and where they live. The system can ask a couple simple questions and give them your available times to come look at it. You get a text notification with all details ready to go.
+                The customer texts back what service they need. The system asks what day and time they prefer, or gives them your booking calendar. You get an instant text notification with all details ready to go.
               </p>
             </div>
           </div>
@@ -339,38 +358,83 @@ export default function TradesLandingPage() {
                 Automatic 5-Star Google Reviews
               </h3>
               <p className="text-sm text-[#6B655F] leading-relaxed">
-                Once you finish the job, tap one button or let the system automatically send a 1-tap text asking for a review. You quickly pile up dozens of 5-star Google reviews, pushing your business to the top of Google Maps in your city.
+                Once the job or appointment is finished, the system automatically sends a friendly 1-tap text asking for a Google review. You quickly pile up dozens of 5-star reviews, pushing you to the top of Google Maps in your town.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. TRADES WE WORK WITH */}
+      {/* 5. WHO THIS IS BUILT FOR (Expanded to Trades, Barbers & Salons) */}
       <section
+        id="who-its-for"
         style={{ borderColor: c.border }}
         className="py-16 px-4 max-w-4xl mx-auto border-t relative z-10"
       >
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#D9551F]">
             WHO THIS IS BUILT FOR
           </span>
           <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#14181B] mt-2">
-            Built for hard-working trade businesses
+            Built for any service business whose hands are busy with clients
           </h2>
+          <p className="text-sm text-[#6B655F] max-w-xl mx-auto mt-2">
+            If you do great work but lose money whenever your phone rings while you are busy, this is for you.
+          </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2.5 max-w-2xl mx-auto">
-          {tradesList.map((trade, idx) => (
-            <span
-              key={idx}
-              style={{ backgroundColor: c.panel, borderColor: c.border }}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium border text-[#14181B] shadow-sm"
-            >
-              <Wrench className="w-3 h-3 text-[#D9551F]" />
-              {trade}
-            </span>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {/* Column A: Trades & Field Services */}
+          <div
+            style={{ backgroundColor: c.panel, borderColor: c.border }}
+            className="p-6 rounded-2xl border shadow-sm space-y-4"
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-[#D9551F]/15 flex items-center justify-center text-[#D9551F]">
+                <Wrench className="w-4 h-4" />
+              </div>
+              <h3 className="font-serif font-bold text-base text-[#14181B]">
+                Home Services &amp; Trades
+              </h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {tradeServices.map((trade, idx) => (
+                <span
+                  key={idx}
+                  style={{ backgroundColor: 'rgba(255,255,255,0.6)', borderColor: c.border }}
+                  className="px-3 py-1 rounded-full text-xs font-medium border text-[#14181B]"
+                >
+                  {trade}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Column B: Barbers, Salons & Studios */}
+          <div
+            style={{ backgroundColor: c.panel, borderColor: c.border }}
+            className="p-6 rounded-2xl border shadow-sm space-y-4"
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-[#2E9C82]/15 flex items-center justify-center text-[#2E9C82]">
+                <Scissors className="w-4 h-4" />
+              </div>
+              <h3 className="font-serif font-bold text-base text-[#14181B]">
+                Barbers, Salons &amp; Studios
+              </h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {studioServices.map((studio, idx) => (
+                <span
+                  key={idx}
+                  style={{ backgroundColor: 'rgba(255,255,255,0.6)', borderColor: c.border }}
+                  className="px-3 py-1 rounded-full text-xs font-medium border text-[#14181B]"
+                >
+                  {studio}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -431,10 +495,10 @@ export default function TradesLandingPage() {
         className="py-20 px-4 max-w-3xl mx-auto border-t text-center relative z-10"
       >
         <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#D9551F] mb-3 block">
-          READY TO STOP LOSING JOBS?
+          READY TO STOP LOSING JOBS &amp; CLIENTS?
         </span>
         <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#14181B] mb-4">
-          Let&apos;s get this set up for your business this week.
+          Let&apos;s get this running on your phone this week.
         </h2>
         <p className="text-sm sm:text-base text-[#6B655F] max-w-lg mx-auto mb-8 leading-relaxed">
           Zero pressure. Send us a quick text on WhatsApp or pick a quick 15-minute time. We will show you how it works live on your phone.
@@ -473,12 +537,12 @@ export default function TradesLandingPage() {
           <button
             onClick={scrollToTop}
             className="bg-transparent border-none p-0 cursor-pointer"
-            title="Kaivex Trades - Return to top"
+            title="Kaivex Local Services - Return to top"
           >
             <KaivexLogo variant="full" size="sm" theme={theme} showSublabel={false} animate={false} />
           </button>
           <p className="max-w-md">
-            Kaivex Trades &amp; Home Services Division. Dedicated missed-call recovery and review automation for local service businesses.
+            Kaivex Local Services &amp; Trades Division. Dedicated missed-call recovery and automated reviews for local appointment and service businesses.
           </p>
           <div className="flex items-center gap-4 font-mono text-[11px] text-[#14181B]">
             <a href="tel:+18484004949" className="hover:underline">
