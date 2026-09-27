@@ -396,7 +396,7 @@ export default function KaivexLandingPage() {
                   Fast, High-Converting Website
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Clean, modern websites built to turn cold visitors into booked client meetings—without confusing forms or fluff.
+                  Clean, modern websites built to turn cold visitors into booked client meetings without confusing forms or fluff.
                 </p>
               </div>
             </motion.div>

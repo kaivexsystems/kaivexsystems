@@ -23,9 +23,9 @@ const caseStudies: CaseStudy[] = [
     metric: "4 Executive Leads Booked",
     description: "Built the Dual Client-Acquisition Engine for a 20-year UAE banking leader and ICF mentor coach. Deployed high-signal LinkedIn authority alongside curated SMTP-verified outbound.",
     highlights: [
-      "Fariha Fatima — Confirmed Diagnostic Meet",
-      "Richard Romm (RommComm) — Demo Showcase Meet",
-      "Tariq Al-Hashemi — Finalizing Kickoff Time",
+      "Fariha Fatima: Confirmed Diagnostic Meet",
+      "Richard Romm (RommComm): Demo Showcase Meet",
+      "Tariq Al-Hashemi: Finalizing Kickoff Time",
       "< 30 min/day input • $0 ad spend"
     ],
   },

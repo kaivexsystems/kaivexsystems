@@ -80,7 +80,7 @@ export default function TradesLandingPage() {
     },
     {
       q: 'How fast can we set this up for my business?',
-      a: 'We set up and test the whole system in 48 to 72 hours. You do not have to lift a finger—we build and test everything for you.',
+      a: 'We set up and test the whole system in 48 to 72 hours. You do not have to lift a finger because we build and test everything for you.',
     },
     {
       q: 'What if someone calls after closing hours or late at night?',
@@ -244,7 +244,7 @@ export default function TradesLandingPage() {
           style={{ color: c.textMuted }}
           className="text-base sm:text-lg md:text-xl max-w-2xl mb-8 leading-relaxed tracking-[-0.015em]"
         >
-          You are on a ladder, cutting hair, under a sink, or with a client and can&apos;t answer your phone. We text customers back in 30 seconds, answer their questions, and book the job or appointment on your calendar—automatically.
+          You are on a ladder, cutting hair, under a sink, or with a client and can&apos;t answer your phone. We text customers back in 30 seconds, answer their questions, and book the job or appointment on your calendar automatically.
         </p>
 
         {/* Dual CTA Actions */}
