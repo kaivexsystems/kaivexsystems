@@ -105,7 +105,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
           <button
             onClick={() =>
               handleAction(() => {
-                window.open("https://cal.com/ahmad-farooq-tuwcnw/30min", "_blank");
+                window.open("https://cal.com/ahmad-farooq-tuwcnw/15min", "_blank");
               })
             }
             className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-orange-600/20 hover:border-orange-500/40 border border-transparent transition text-left group"

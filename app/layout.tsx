@@ -108,7 +108,7 @@ const jsonLd = {
       ],
       sameAs: [
         "https://www.instagram.com/kaivexsystems/",
-        "https://cal.com/ahmad-farooq-tuwcnw/30min"
+        "https://cal.com/ahmad-farooq-tuwcnw/15min"
       ],
       contactPoint: {
         "@type": "ContactPoint",
@@ -199,7 +199,7 @@ const jsonLd = {
           name: "How do I schedule a strategy consultation with Kaivex Systems?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can schedule a direct 30-minute architecture review via Cal.com at https://cal.com/ahmad-farooq-tuwcnw/30min or connect via WhatsApp at +1 (848) 400-4949."
+            text: "You can schedule a direct 15-minute architecture diagnostic via Cal.com at https://cal.com/ahmad-farooq-tuwcnw/15min or connect via WhatsApp at +1 (848) 400-4949."
           }
         }
       ]

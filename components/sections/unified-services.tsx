@@ -74,7 +74,7 @@ export function UnifiedServices() {
               <span className="text-lg font-bold text-purple-400">4 Leads in 48 Hours ($0 Ads)</span>
             </div>
             <a
-              href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+              href="https://cal.com/ahmad-farooq-tuwcnw/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-sans text-xs font-bold transition-all flex items-center gap-1.5"
@@ -138,7 +138,7 @@ export function UnifiedServices() {
               <span className="text-lg font-bold text-teal-400">&lt; 45 Second Response Time</span>
             </div>
             <a
-              href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+              href="https://cal.com/ahmad-farooq-tuwcnw/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full bg-teal-600 hover:bg-teal-500 text-white font-sans text-xs font-bold transition-all flex items-center gap-1.5"

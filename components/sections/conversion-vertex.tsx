@@ -32,7 +32,7 @@ export function ConversionVertex() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
             <a
-              href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+              href="https://cal.com/ahmad-farooq-tuwcnw/15min"
               target="_blank"
               rel="noopener noreferrer"
             >

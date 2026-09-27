@@ -202,7 +202,7 @@ export function GravityHero() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+            href="https://cal.com/ahmad-farooq-tuwcnw/15min"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-7 py-3.5 rounded-full bg-white text-black font-sans font-bold text-sm tracking-wide shadow-[0_0_30px_rgba(255,255,255,0.25)] hover:shadow-[0_0_40px_rgba(255,255,255,0.45)] transition-all flex items-center gap-2 hover:scale-105 active:scale-95"

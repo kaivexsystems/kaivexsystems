@@ -1,92 +1,140 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { motion } from 'motion/react';
+import React, { useEffect, useRef } from 'react';
 
 interface CustomCursorProps {
   theme?: 'light' | 'dark';
 }
 
 /**
- * Custom Fluid Pointer Animation
- * Provides an organic trailing cursor ring and precision dot
- * that magnetizes and expands over interactive links and buttons.
+ * Premium Studio Ambient Follower & Interactive Focus Cursor
+ * - 100% Hardware-Accelerated (Zero React state re-renders)
+ * - Subtle ambient illumination beam that highlights editorial panels
+ * - Precision magnetic focus ring that softly frames clickable elements
+ * - Automatically disables on touchscreens for maximum performance
  */
 export function CustomCursor({ theme = 'light' }: CustomCursorProps) {
-  const [mousePos, setMousePos] = useState({ x: -100, y: -100 });
-  const [isHovering, setIsHovering] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const haloRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
 
   const isLight = theme === 'light';
-  const dotColor = isLight ? '#D9551F' : '#FF7A47';
-  const ringColor = isLight ? 'rgba(217, 85, 31, 0.45)' : 'rgba(255, 122, 71, 0.5)';
 
   useEffect(() => {
-    // Only activate on devices with mouse pointer
-    if (window.matchMedia('(pointer: coarse)').matches) return;
+    // Only run on non-touch devices with fine pointers
+    if (typeof window === 'undefined' || window.matchMedia('(pointer: coarse)').matches) {
+      return;
+    }
+
+    const halo = haloRef.current;
+    const ring = ringRef.current;
+    if (!halo || !ring) return;
+
+    let mouseX = -500;
+    let mouseY = -500;
+    let currentX = -500;
+    let currentY = -500;
+    let ringX = -500;
+    let ringY = -500;
+    let isHovering = false;
+    let isVisible = false;
+    let rafId: number;
 
     const onMouseMove = (e: MouseEvent) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
-      if (!isVisible) setIsVisible(true);
+      mouseX = e.clientX;
+      mouseY = e.clientY;
 
-      // Check if hovering interactive element
-      const target = e.target as HTMLElement | null;
-      if (
-        target?.closest('button') ||
-        target?.closest('a') ||
-        target?.closest('input') ||
-        target?.classList.contains('cursor-pointer')
-      ) {
-        setIsHovering(true);
-      } else {
-        setIsHovering(false);
+      if (!isVisible) {
+        isVisible = true;
+        halo.style.opacity = '1';
+        ring.style.opacity = '1';
       }
+
+      // Check for interactive targets
+      const target = e.target as HTMLElement | null;
+      const clickable = target?.closest('button, a, input, select, textarea, [role="button"], .cursor-pointer');
+      isHovering = !!clickable;
     };
 
-    const onMouseLeave = () => setIsVisible(false);
-    const onMouseEnter = () => setIsVisible(true);
+    const onMouseLeave = () => {
+      isVisible = false;
+      halo.style.opacity = '0';
+      ring.style.opacity = '0';
+    };
 
-    window.addEventListener('mousemove', onMouseMove);
+    const onMouseEnter = () => {
+      isVisible = true;
+      halo.style.opacity = '1';
+      ring.style.opacity = '1';
+    };
+
+    // Smooth 120 FPS Lerp Loop running on compositor
+    const render = () => {
+      // Fast response for ambient halo
+      currentX += (mouseX - currentX) * 0.18;
+      currentY += (mouseY - currentY) * 0.18;
+
+      // Silky magnetic lag for precision ring
+      ringX += (mouseX - ringX) * 0.28;
+      ringY += (mouseY - ringY) * 0.28;
+
+      halo.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%)`;
+      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%) scale(${isHovering ? 1.55 : 1})`;
+
+      if (isHovering) {
+        ring.style.borderColor = isLight ? 'rgba(217, 85, 31, 0.7)' : 'rgba(255, 122, 71, 0.8)';
+        ring.style.backgroundColor = isLight ? 'rgba(217, 85, 31, 0.08)' : 'rgba(255, 122, 71, 0.12)';
+      } else {
+        ring.style.borderColor = isLight ? 'rgba(20, 24, 27, 0.22)' : 'rgba(255, 255, 255, 0.25)';
+        ring.style.backgroundColor = 'transparent';
+      }
+
+      rafId = requestAnimationFrame(render);
+    };
+
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
     document.addEventListener('mouseleave', onMouseLeave);
     document.addEventListener('mouseenter', onMouseEnter);
+    rafId = requestAnimationFrame(render);
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);
       document.removeEventListener('mouseenter', onMouseEnter);
+      cancelAnimationFrame(rafId);
     };
-  }, [isVisible]);
-
-  if (!isVisible) return null;
+  }, [isLight]);
 
   return (
-    <div className="hidden md:block pointer-events-none fixed inset-0 z-[9999] overflow-hidden">
-      {/* Precision Center Dot */}
-      <motion.div
-        animate={{
-          x: mousePos.x - 3,
-          y: mousePos.y - 3,
-          scale: isHovering ? 0.6 : 1,
+    <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden hidden md:block">
+      {/* 1. Ambient Editorial Diffuse Beam (Illuminates underlying paper/panels softly) */}
+      <div
+        ref={haloRef}
+        style={{
+          width: '320px',
+          height: '320px',
+          background: isLight
+            ? 'radial-gradient(circle, rgba(217, 85, 31, 0.06) 0%, rgba(46, 156, 130, 0.03) 45%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(255, 122, 71, 0.08) 0%, rgba(143, 224, 206, 0.04) 45%, transparent 70%)',
+          willChange: 'transform',
+          opacity: 0,
+          transition: 'opacity 0.4s ease-out',
         }}
-        transition={{ type: 'spring', damping: 30, stiffness: 450, mass: 0.1 }}
-        style={{ backgroundColor: dotColor }}
-        className="w-1.5 h-1.5 rounded-full fixed top-0 left-0 pointer-events-none"
+        className="fixed top-0 left-0 rounded-full blur-xl"
       />
 
-      {/* Trailing Elastic Micro-Ring */}
-      <motion.div
-        animate={{
-          x: mousePos.x - 14,
-          y: mousePos.y - 14,
-          scale: isHovering ? 1.6 : 1,
-          borderColor: isHovering ? dotColor : ringColor,
-          backgroundColor: isHovering ? (isLight ? 'rgba(217, 85, 31, 0.08)' : 'rgba(255, 122, 71, 0.12)') : 'transparent',
+      {/* 2. Precision Micro Focus Ring (Subtle, sleek, non-distracting) */}
+      <div
+        ref={ringRef}
+        style={{
+          width: '26px',
+          height: '26px',
+          borderWidth: '1.2px',
+          willChange: 'transform, border-color, background-color',
+          opacity: 0,
+          transition: 'opacity 0.25s ease-out, scale 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, background-color 0.2s',
         }}
-        transition={{ type: 'spring', damping: 25, stiffness: 220, mass: 0.3 }}
-        className="w-7 h-7 rounded-full border border-current fixed top-0 left-0 pointer-events-none backdrop-blur-[0.5px]"
+        className="fixed top-0 left-0 rounded-full border"
       />
     </div>
   );
 }
-
-export default CustomCursor;

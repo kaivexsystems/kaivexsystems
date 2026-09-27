@@ -41,7 +41,7 @@ const DEFAULT_TIERS: PricingTier[] = [
       "100% owned source code deliverable",
     ],
     ctaText: "Lock sprint slot",
-    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/30min",
+    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/15min",
   },
   {
     id: "scale",
@@ -60,7 +60,7 @@ const DEFAULT_TIERS: PricingTier[] = [
       "Dedicated Slack channel with Ahmad & Ayaan",
     ],
     ctaText: "Initiate retainer",
-    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/30min",
+    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/15min",
   },
   {
     id: "elevate",
@@ -76,7 +76,7 @@ const DEFAULT_TIERS: PricingTier[] = [
       "Full priority engineering SLA with zero backlog",
     ],
     ctaText: "Apply for partnership",
-    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/30min",
+    ctaLink: "https://cal.com/ahmad-farooq-tuwcnw/15min",
   },
 ];
 
@@ -86,7 +86,7 @@ export function StudiovaPricingTable({
   tagNumber = "04",
   tagLabel = "PRICING",
   tiers = DEFAULT_TIERS,
-  brandBacklink = "https://cal.com/ahmad-farooq-tuwcnw/30min",
+  brandBacklink = "https://cal.com/ahmad-farooq-tuwcnw/15min",
   className = "",
 }: StudiovaPricingTableProps) {
   const [isAnnual, setIsAnnual] = useState(false);

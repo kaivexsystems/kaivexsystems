@@ -11,6 +11,7 @@ import { FeatureCarouselSteps } from '@/components/sections/feature-carousel-ste
 import { AvatarTooltipStack } from '@/components/ui/avatar-tooltip-stack';
 import { SlidingArrowButton } from '@/components/ui/sliding-arrow-button';
 import { CustomCursor } from '@/components/ui/custom-cursor';
+import { SystemsArchitectureFlow } from '@/components/sections/systems-architecture-flow';
 
 const InstagramIcon = ({ className = 'w-3.5 h-3.5', color }: { className?: string; color?: string }) => (
   <svg
@@ -29,7 +30,7 @@ const InstagramIcon = ({ className = 'w-3.5 h-3.5', color }: { className?: strin
   </svg>
 );
 
-const BOOKING_URL = 'https://cal.com/ahmad-farooq-tuwcnw/30min';
+const BOOKING_URL = 'https://cal.com/ahmad-farooq-tuwcnw/15min';
 const WHATSAPP_URL = 'https://wa.me/18484004949';
 const INSTAGRAM_URL = 'https://www.instagram.com/kaivexsystems/';
 const EMAIL = 'kaivexsystems@gmail.com';
@@ -547,7 +548,14 @@ export default function KaivexLandingPage() {
         </motion.div>
       </section>
 
-      {/* 5. HOW IT WORKS (Feature Carousel Steps from Recording) */}
+      {/* 5. SYSTEMS ARCHITECTURE FLOW (Visual Infrastructure Blueprint) */}
+      <div style={{ borderColor: c.border }} className="border-t relative z-10">
+        <motion.div {...sectionMotion}>
+          <SystemsArchitectureFlow theme={theme} />
+        </motion.div>
+      </div>
+
+      {/* 6. HOW IT WORKS (Feature Carousel Steps from Recording) */}
       <section
         style={{ borderColor: c.border }}
         className="py-20 px-4 max-w-4xl mx-auto border-t relative z-10"

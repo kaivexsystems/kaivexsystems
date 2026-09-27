@@ -95,7 +95,7 @@ export function FloatingDock({ onOpenCommandPalette }: FloatingDockProps) {
 
           {/* Cal.com CTA */}
           <a
-            href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+            href="https://cal.com/ahmad-farooq-tuwcnw/15min"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -88,7 +88,7 @@ export function ReflectiveNavbar() {
           {/* Book a Call CTA */}
           <div className="pl-3 border-l border-white/[0.08]">
             <a
-              href="https://cal.com/ahmad-farooq-tuwcnw/30min"
+              href="https://cal.com/ahmad-farooq-tuwcnw/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="group px-4 py-1.5 rounded-xl bg-white/90 hover:bg-white text-black text-xs font-sans font-bold transition-all duration-300 flex items-center gap-1.5 shadow-[0_0_16px_rgba(255,255,255,0.1)] hover:shadow-[0_0_24px_rgba(255,255,255,0.2)] active:scale-95"
