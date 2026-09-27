@@ -229,7 +229,7 @@ export default function KaivexLandingPage() {
           >
             Marketing systems that add{' '}
             <LuminousText
-              text="10+ qualified leads"
+              text="10+ qualified call bookings"
               theme={theme}
             />{' '}
             every month, consistently.

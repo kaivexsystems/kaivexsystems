@@ -27,7 +27,7 @@ export function LuminousText({ text, theme = 'light', className = '' }: Luminous
 
   return (
     <span
-      className={`inline font-inherit select-none animate-luminous-sweep ${className}`}
+      className={`inline font-inherit select-none animate-luminous-sweep whitespace-nowrap ${className}`}
       style={{
         backgroundImage: `linear-gradient(110deg, ${baseColor} 20%, ${shimmerColor} 48%, ${baseColor} 76%)`,
         backgroundSize: '250% 100%',
