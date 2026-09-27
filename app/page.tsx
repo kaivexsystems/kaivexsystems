@@ -231,7 +231,6 @@ export default function KaivexLandingPage() {
             <LuminousText
               text="10+ qualified leads"
               theme={theme}
-              className="px-1"
             />{' '}
             every month, consistently.
           </h1>
