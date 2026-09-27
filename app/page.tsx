@@ -48,6 +48,11 @@ export default function KaivexLandingPage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const isLight = theme === 'light';
 
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Dual-Surface Palette Tokens strictly grounded in Brand Guideline v2
   const c = isLight
     ? {
@@ -114,7 +119,8 @@ export default function KaivexLandingPage() {
         >
           {/* Logo with subtle sway/breathing animation - Clickable to top */}
           <a
-            href="#top"
+            href="/"
+            onClick={scrollToTop}
             className="flex items-center gap-2 hover:opacity-90 transition-opacity"
             title="Kaivex Systems - Return to top"
           >
@@ -287,13 +293,13 @@ export default function KaivexLandingPage() {
                   style={{ color: c.flare }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  01 // PIPELINE
+                  01 // REVENUE SWINGS
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Inconsistent pipeline
+                  Unpredictable client flow
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Revenue swings from feast to famine with zero control over when your next qualified client books.
+                  Revenue swings from busy months to quiet months because you don&apos;t have a predictable way to bring in new clients on demand.
                 </p>
               </div>
             </motion.div>
@@ -310,13 +316,13 @@ export default function KaivexLandingPage() {
                   style={{ color: c.current }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  02 // OVERHEAD
+                  02 // OVERPAYING
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Agency bloat
+                  Expensive agency bloat
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  You pay thousands for bloated account managers who pass work to juniors and never understand your product.
+                  You pay thousands to agencies with junior account managers who don&apos;t understand your business and deliver zero booked calls.
                 </p>
               </div>
             </motion.div>
@@ -333,13 +339,13 @@ export default function KaivexLandingPage() {
                   style={{ color: c.textMuted }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  03 // DEPENDENCY
+                  03 // TRAPPED
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Referral dependency
+                  Relying only on referrals
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  You rely on unpredictable word of mouth without an owned, repeatable acquisition engine you control.
+                  Word of mouth is great, but you can&apos;t control when it happens. You need a real system bringing qualified buyers to you every week.
                 </p>
               </div>
             </motion.div>
@@ -347,7 +353,7 @@ export default function KaivexLandingPage() {
         </motion.div>
       </section>
 
-      {/* 3. OFFER SECTION (3 bullet points, 10+ qualified leads/month framing) */}
+      {/* 3. OFFER SECTION (3 bullet points, 10+ qualified call bookings framing) */}
       <section
         style={{ borderColor: c.border }}
         className="py-20 px-4 max-w-4xl mx-auto border-t relative z-10"
@@ -364,12 +370,12 @@ export default function KaivexLandingPage() {
               style={{ color: c.text }}
               className="text-3xl sm:text-5xl font-serif font-bold tracking-tight mt-2"
             >
-              Everything built to deliver 10+ qualified leads per month
+              Everything built to deliver 10+ qualified call bookings every month
             </h2>
           </div>
 
           <div className="space-y-4">
-            {/* Bullet 1: Funnel Build */}
+            {/* Bullet 1: Fast High Converting Website */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -387,15 +393,15 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Custom Funnel Architecture
+                  Fast, High-Converting Website
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  High-converting, sub-second digital landing systems that turn cold visitors into booked sales calls.
+                  Clean, modern websites built to turn cold visitors into booked client meetings—without confusing forms or fluff.
                 </p>
               </div>
             </motion.div>
 
-            {/* Bullet 2: Qualification System */}
+            {/* Bullet 2: Pre-Call Qualification */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -413,15 +419,15 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Automated Qualification System
+                  Pre-Call Client Qualification
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Interactive diagnostic logic that filters out tire-kickers so you only spend time on calls with funded buyers.
+                  A simple 2-minute questionnaire asks their budget and needs before they book, so you only talk to real buyers with real budgets.
                 </p>
               </div>
             </motion.div>
 
-            {/* Bullet 3: Outbound & LinkedIn Engine */}
+            {/* Bullet 3: Done-For-You Outreach */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -439,10 +445,10 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Outbound &amp; LinkedIn Engine
+                  Done-For-You LinkedIn &amp; Email Outreach
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Bespoke outbound infrastructure and executive positioning that consistently adds 10+ qualified leads to your calendar every month.
+                  We write your LinkedIn authority posts and send targeted emails directly to your ideal buyers, consistently booking 10+ qualified calls on your calendar every month.
                 </p>
               </div>
             </motion.div>
@@ -596,13 +602,13 @@ export default function KaivexLandingPage() {
             style={{ color: c.text }}
             className="text-3xl sm:text-5xl font-serif font-bold tracking-tight mb-4 max-w-2xl leading-[1.15]"
           >
-            Ready to add 10+ qualified leads every month?
+            Ready to add 10+ qualified call bookings every month?
           </h2>
           <p
             style={{ color: c.textMuted }}
             className="text-sm sm:text-base font-sans max-w-lg mb-8 leading-relaxed tracking-[-0.015em]"
           >
-            Zero sales pitch. We analyze your numbers and show you exactly where your pipeline is leaking.
+            Zero sales pitch. We look at your current numbers and show you how to start booking high-paying clients consistently.
           </p>
 
           {/* Sliding Arrow CTA Button */}
@@ -627,7 +633,7 @@ export default function KaivexLandingPage() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
               {/* Kaivex logo with subtle breathing animation in footer */}
-              <a href="#top" title="Return to top">
+              <a href="/" onClick={scrollToTop} title="Return to top">
                 <KaivexLogo variant="full" size="sm" theme={theme} showSublabel={true} animate={true} />
               </a>
             </div>
