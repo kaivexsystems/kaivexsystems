@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rise with Fariha: Executive Acquisition Strategy & Commercial Decision | Kaivex Systems</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #EBE3D3;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #E2DAC8;
+      --text-dark: #14181B;
+      --text-muted: #6B655F;
+      --accent-orange: #D9551F;
+      --accent-teal: #2E9C82;
+      --border-subtle: rgba(20, 24, 27, 0.09);
+      --border-strong: rgba(20, 24, 27, 0.16);
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
+    }
+    .font-serif {
+      font-family: 'Newsreader', Georgia, serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .card-base {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 20px -2px rgba(20, 24, 27, 0.05);
+    }
+    .card-accent {
+      background-color: #F8F5EE;
+      border: 2px solid var(--accent-orange);
+      box-shadow: 0 12px 32px -4px rgba(217, 85, 31, 0.12);
+    }
+    .card-teal {
+      background-color: #F4F7F5;
+      border: 2px solid var(--accent-teal);
+      box-shadow: 0 12px 32px -4px rgba(46, 156, 130, 0.12);
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen selection:bg-[#D9551F] selection:text-white">
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-[#EBE3D3]/90 backdrop-blur-md border-b border-[rgba(20,24,27,0.08)] px-6 py-3.5 transition-all">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center space-x-3">
+        <svg viewBox="0 0 82 52" width="28" height="18" fill="none" class="shrink-0">
+          <g transform="translate(2, 2)">
+            <path d="M0,10 C13,4 26,16 39,10 C52,4 65,16 78,10" stroke="#6B655F" stroke-width="3" stroke-linecap="round"/>
+            <path d="M0,26 C13,32 26,20 39,26 C52,32 65,20 78,26" stroke="#2E9C82" stroke-width="4.2" stroke-linecap="round"/>
+            <path d="M0,42 C13,36 26,48 39,42 C52,36 65,48 78,42" stroke="#D9551F" stroke-width="5.5" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <div class="flex items-center gap-2">
+          <span class="font-bold tracking-tight text-sm text-[#14181B]">Kaive<span class="text-[#D9551F]">x</span></span>
+          <span class="text-[#6B655F]/40">/</span>
+          <span class="text-xs font-semibold text-[#2E9C82]">Rise with Fariha</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="flex items-center space-x-3">
+        <!-- Currency Selector -->
+        <div class="flex items-center bg-[#E2DAC8] border border-[rgba(20,24,27,0.1)] rounded-lg p-0.5 text-xs font-mono">
+          <button id="btnUSD" onclick="setCurrency('USD')" class="px-2.5 py-1 rounded bg-[#14181B] text-white font-bold transition shadow-xs">USD</button>
+          <button id="btnAED" onclick="setCurrency('AED')" class="px-2.5 py-1 rounded text-[#6B655F] hover:text-[#14181B] transition font-bold">AED</button>
+        </div>
+
+        <a href="#commercials" class="px-4 py-1.5 rounded-lg bg-[#D9551F] hover:bg-[#c24614] text-white text-xs font-bold font-mono tracking-wider transition shadow-sm">
+          PRICING &amp; DECISION
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Stage -->
+  <main class="max-w-6xl mx-auto px-6 py-12 w-full space-y-16">
+
+    <!-- Hero Header Block -->
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <div class="pill-badge bg-white/70 border border-[rgba(20,24,27,0.1)] text-[#2E9C82] shadow-xs">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#2E9C82] animate-pulse"></span>
+        STRATEGY BLUEPRINT &amp; COMMERCIAL DOSSIER
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#14181B] leading-[1.12]">
+        The Executive Client <br>
+        <span class="text-[#D9551F]">Acquisition Engine</span>
+      </h1>
+      <p class="text-base sm:text-lg text-[#6B655F] font-normal leading-relaxed max-w-2xl mx-auto">
+        Transitioning 20 years of elite UAE corporate banking leadership from an unpredictable \$89/session referral loop into an institutional, high-margin executive advisory practice.
+      </p>
+    </div>
+
+    <!-- 1. THE FOUNDER'S UNTAPPED PEDIGREE -->
+    <div class="card-base rounded-2xl p-6 sm:p-8 bg-white border border-[rgba(20,24,27,0.09)]">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="pill-badge bg-[#E2DAC8] text-[#14181B]">INSTITUTIONAL PEDIGREE</span>
+        <span class="text-xs text-[#6B655F] font-mono">The Real Corporate Authority</span>
+      </div>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B] mb-2">
+        Why Fariha's Background Is an Unfair Advantage
+      </h2>
+      <p class="text-sm text-[#6B655F] leading-relaxed mb-6">
+        Most coaches in the GCC share generic motivational quotes because they have never sat inside a boardroom. Fariha spent two decades driving high-stakes product and strategy decisions inside the UAE's premier financial institutions:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.08)]">
+          <div class="font-mono text-xs font-bold text-[#D9551F] uppercase mb-1">National Bonds (3 Years)</div>
+          <div class="font-bold text-sm text-[#14181B] mb-1">Product Lead &amp; Head of Product</div>
+          <p class="text-xs text-[#6B655F] leading-relaxed">
+            Led products, portfolio, and alternate revenue streams for UAE's leading savings &amp; investment corporation.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.08)]">
+          <div class="font-mono text-xs font-bold text-[#2E9C82] uppercase mb-1">Emirates Islamic (3.5 Years)</div>
+          <div class="font-bold text-sm text-[#14181B] mb-1">Strategy Manager</div>
+          <p class="text-xs text-[#6B655F] leading-relaxed">
+            Drove ESG, sustainable finance frameworks, and major corporate &amp; strategic transformation projects.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.08)]">
+          <div class="font-mono text-xs font-bold text-[#14181B] uppercase mb-1">Amlak Finance</div>
+          <div class="font-bold text-sm text-[#14181B] mb-1">Product &amp; Portfolio Lead</div>
+          <p class="text-xs text-[#6B655F] leading-relaxed">
+            Spearheaded product architecture, consumer finance portfolios, and executive stakeholder alignment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. THE DIAGNOSTIC TEARDOWN: CURRENT VS THE FIX -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Current Dilemma -->
+      <div class="p-6 sm:p-7 rounded-2xl bg-[#FDF2F0] border-2 border-[#E77960] flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 font-mono text-xs font-bold text-[#D9551F] uppercase mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            Current State: The Low-Ticket Generalist Trap
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#14181B] mb-3">Charging \$89/Session &amp; Diluting the Brand</h3>
+          <ul class="space-y-2.5 text-xs text-[#4A443E] leading-relaxed">
+            <li class="flex items-start gap-2">
+              <span class="text-[#D9551F] font-bold">•</span>
+              <span><strong>The Hamster Wheel:</strong> To make \$5,000/mo at \$89/session, she must deliver <strong>56 live 1-on-1 hours</strong> every month.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#D9551F] font-bold">•</span>
+              <span><strong>Generalist Dilution:</strong> Mixing \$69 child coaching with corporate C-suite on the same menu confuses enterprise buyers and kills pricing power.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#D9551F] font-bold">•</span>
+              <span><strong>Unpredictable Pipeline:</strong> Relying on sporadic word-of-mouth with zero owned lead capture or outbound booking mechanism.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 pt-3 border-t border-[rgba(217,85,31,0.2)] text-[11px] font-mono text-[#D9551F] font-bold">
+          CONSEQUENCE: Elite banking authority trapped in hourly session economics.
+        </div>
+      </div>
+
+      <!-- The Kaivex Solution -->
+      <div class="p-6 sm:p-7 rounded-2xl bg-[#EFF7F4] border-2 border-[#2E9C82] flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 font-mono text-xs font-bold text-[#2E9C82] uppercase mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            The Solution: High-Confidence Executive Packaging
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#14181B] mb-3">Stepping Stones She Feels Confident Selling</h3>
+          <ul class="space-y-2.5 text-xs text-[#284B3F] leading-relaxed">
+            <li class="flex items-start gap-2">
+              <span class="text-[#2E9C82] font-bold">•</span>
+              <span><strong>Realistic Price Elevation:</strong> Move from \$89/session to a <strong>\$1,500 Executive Mentorship Package</strong> (~150/session). Natural, easy to sell, zero anxiety.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#2E9C82] font-bold">•</span>
+              <span><strong>Corporate Training Activation:</strong> Package her "Corporate Training" into a packaged <strong>\$2,500 Half-Day Workplace EQ Lab</strong> for UAE banking &amp; finance teams.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#2E9C82] font-bold">•</span>
+              <span><strong>Brand Segmentation:</strong> Keep child and youth coaching private / unlisted; present pure executive authority on LinkedIn.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 pt-3 border-t border-[rgba(46,156,130,0.2)] text-[11px] font-mono text-[#2E9C82] font-bold">
+          RESULT: Just 2 clients a month generates $3,000 to $5,000 with 80% less effort.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 3. THE REPOSITIONED OFFER OPTIONS (CONFIDENCE-ALIGNED) -->
+    <div class="card-base rounded-2xl p-6 sm:p-8 bg-white border border-[rgba(20,24,27,0.09)] space-y-6">
+      <div>
+        <div class="pill-badge bg-[#E2DAC8] text-[#14181B] mb-2">OFFER ARCHITECTURE</div>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B]">
+          How We Make Her Offer Irresistible &amp; Easy to Sell
+        </h2>
+        <p class="text-xs sm:text-sm text-[#6B655F] mt-1">
+          We do not invent an unrealistic \$10,000 corporate offer that makes her hesitate. We package what she already does into two accessible, high-confidence tiers:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Offer 1: Executive 1-on-1 Mentorship -->
+        <div class="p-5 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase text-[#D9551F]">TIER 1 // 1-ON-1 EXECUTIVE</span>
+            <span class="text-xs font-mono font-bold text-[#14181B] bg-white px-2 py-0.5 rounded border border-[rgba(20,24,27,0.1)]">10-Week Program</span>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#14181B]">The Executive EQ &amp; Leadership Lab</h3>
+          <p class="text-xs text-[#6B655F] leading-relaxed">
+            Tailored specifically for UAE Banking VPs, Strategy Leads, and Corporate Finance Heads navigating executive burnout, board politics, or high-stakes leadership transitions.
+          </p>
+
+          <div class="p-3 bg-white rounded-lg border border-[rgba(20,24,27,0.08)] flex items-center justify-between">
+            <div>
+              <span class="text-[10px] font-mono uppercase text-[#6B655F] block">Recommended Retail Price</span>
+              <span class="text-lg font-bold font-serif text-[#14181B]">$1,500 USD <span class="text-xs font-mono font-normal text-[#6B655F]">(5,500 AED)</span></span>
+            </div>
+            <span class="text-[11px] font-mono text-[#2E9C82] font-bold">~$150 / session</span>
+          </div>
+
+          <ul class="text-xs text-[#4A443E] space-y-1.5 pt-1">
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> 10 x 50-minute private consultative sessions</li>
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> Personalized Executive EQ Leadership Diagnostic</li>
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> WhatsApp voice check-in access between sessions</li>
+          </ul>
+        </div>
+
+        <!-- Offer 2: Corporate Workshop -->
+        <div class="p-5 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase text-[#2E9C82]">TIER 2 // B2B CORPORATE</span>
+            <span class="text-xs font-mono font-bold text-[#14181B] bg-white px-2 py-0.5 rounded border border-[rgba(20,24,27,0.1)]">Half-Day Corporate</span>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-[#14181B]">The Workplace Emotional &amp; Financial Resilience Lab</h3>
+          <p class="text-xs text-[#6B655F] leading-relaxed">
+            Delivered directly to corporate finance, banking, and professional service teams in Dubai and Abu Dhabi to build resilient, high-retention corporate cultures.
+          </p>
+
+          <div class="p-3 bg-white rounded-lg border border-[rgba(20,24,27,0.08)] flex items-center justify-between">
+            <div>
+              <span class="text-[10px] font-mono uppercase text-[#6B655F] block">Corporate Package Price</span>
+              <span class="text-lg font-bold font-serif text-[#14181B]">$2,500 USD <span class="text-xs font-mono font-normal text-[#6B655F]">(9,000 AED)</span></span>
+            </div>
+            <span class="text-[11px] font-mono text-[#D9551F] font-bold">Under credit-card limit</span>
+          </div>
+
+          <ul class="text-xs text-[#4A443E] space-y-1.5 pt-1">
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> 1x Half-Day Interactive Corporate Workshop (up to 20 pax)</li>
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> Team Stress &amp; Financial Mindset Diagnostic Tool</li>
+            <li class="flex items-center gap-1.5"><span class="text-[#2E9C82] font-bold">✓</span> No bureaucratic RFP needed (fits internal team budgets)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4. SYSTEM ARCHITECTURE DIAGRAM -->
+    <div class="card-base rounded-2xl p-6 sm:p-8 bg-white border border-[rgba(20,24,27,0.09)] space-y-6">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <div class="pill-badge bg-[#E2DAC8] text-[#14181B]">ARCHITECTURE DIAGRAM</div>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B]">
+          How the Dual Acquisition Engine Operates
+        </h2>
+        <p class="text-xs sm:text-sm text-[#6B655F]">
+          A frictionless pipeline connecting UAE banking executives directly into booked consultations.
+        </p>
+      </div>
+
+      <!-- Flow Chart Diagram (SVG / Flex Grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center pt-4">
+        
+        <!-- Step 1 -->
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] relative">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-[10px] font-bold text-[#D9551F]">STEP 01</span>
+            <span class="w-2 h-2 rounded-full bg-[#D9551F]"></span>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-[#14181B] mb-1">High-Signal Authority</h4>
+          <p class="text-[11px] text-[#6B655F] leading-snug">
+            Overhauled LinkedIn profile showcasing 20-yr banking credentials + 3x weekly boardroom case studies.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] relative">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-[10px] font-bold text-[#2E9C82]">STEP 02</span>
+            <span class="w-2 h-2 rounded-full bg-[#2E9C82]"></span>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-[#14181B] mb-1">3-Min EQ Scorecard</h4>
+          <p class="text-[11px] text-[#6B655F] leading-snug">
+            Custom diagnostic web app capturing corporate email, job title, and executive pressure points.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-4 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] relative">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-[10px] font-bold text-[#14181B]">STEP 03</span>
+            <span class="w-2 h-2 rounded-full bg-[#14181B]"></span>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-[#14181B] mb-1">VIP Cal.com Gate</h4>
+          <p class="text-[11px] text-[#6B655F] leading-snug">
+            Pre-qualifying questions filter out low-intent users and route senior leaders straight to Zoom.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-4 rounded-xl bg-[#2E9C82]/10 border-2 border-[#2E9C82] relative">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-[10px] font-bold text-[#2E9C82]">STEP 04</span>
+            <span class="w-2 h-2 rounded-full bg-[#2E9C82] animate-ping"></span>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-[#14181B] mb-1">Enrolled Retainer</h4>
+          <p class="text-[11px] text-[#2E9C82] font-bold leading-snug">
+            1 in 3 consultations enroll into the $1,500 Mentorship or $2,500 Corporate Workshop.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="p-3 bg-[#E2DAC8]/50 rounded-xl text-center text-xs font-mono text-[#6B655F]">
+        <strong class="text-[#14181B]">Division of Responsibility:</strong> Kaivex builds and runs 90% of the tech and copy. Fariha provides 45 mins/month of voice input and shows up to calls.
+      </div>
+    </div>
+
+    <!-- 5. KAIVEX COMMERCIAL DECISION SECTION -->
+    <div id="commercials" class="space-y-6 pt-4">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <div class="pill-badge bg-[#E2DAC8] text-[#14181B]">COMMERCIAL DECISION</div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#14181B]">
+          Choose Your Launch Track
+        </h2>
+        <p class="text-xs sm:text-sm text-[#6B655F]">
+          Predictable, ROI-anchored investments with zero agency bloat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- CARD 1: 14-DAY FOUNDATION SPRINT (HERO CARD) -->
+        <div class="card-accent rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full bg-[#D9551F] text-white font-mono text-[11px] font-extrabold uppercase tracking-wider shadow-sm">
+            PRIMARY RECOMMENDATION
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-mono text-xs font-bold text-[#D9551F]">PHASE 1 CORE SPRINT</span>
+                <span class="text-xs text-[#6B655F] font-mono">14-Day Delivery</span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B]">The Foundation Launchpad</h3>
+              <p class="text-xs sm:text-sm text-[#6B655F] mt-1 leading-relaxed">
+                We design, code, write, and deploy your entire executive client acquisition engine so you have an active client pipeline ready for live calls.
+              </p>
+            </div>
+
+            <!-- Price Tag Display -->
+            <div class="p-5 rounded-2xl bg-white border border-[rgba(20,24,27,0.1)]">
+              <div class="text-xs text-[#6B655F] font-mono uppercase mb-1">One-Time System Investment</div>
+              <div class="flex items-baseline gap-2">
+                <span id="priceSprintVal" class="text-4xl sm:text-5xl font-extrabold text-[#14181B] tracking-tight font-serif">$1,500 USD</span>
+                <span id="priceSprintAlt" class="text-sm text-[#6B655F] font-mono">(5,500 AED)</span>
+              </div>
+              <p class="text-[11px] text-[#D9551F] font-mono mt-2 font-bold">
+                Payable in 2 milestones: 50% ($750) upon kickoff, 50% ($750) upon live launch on Day 14.
+              </p>
+            </div>
+
+            <!-- Deliverables -->
+            <div class="space-y-2.5 text-xs text-[#4A443E]">
+              <div class="font-mono text-[11px] font-bold text-[#14181B] uppercase tracking-wider">What We Build &amp; Deploy:</div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#D9551F] font-bold mt-0.5">✓</span>
+                <span><strong>Authority Profile Architecture:</strong> Complete revamp of LinkedIn headline, bio, featured section, and bespoke executive banner.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#D9551F] font-bold mt-0.5">✓</span>
+                <span><strong>3-Minute Executive EQ Scorecard:</strong> Custom-coded web app diagnosing leadership &amp; team stress to capture work emails.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#D9551F] font-bold mt-0.5">✓</span>
+                <span><strong>Cal.com VIP Screening Bridge:</strong> Integrated calendar flow pre-qualifying corporate leaders before Zoom.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#D9551F] font-bold mt-0.5">✓</span>
+                <span><strong>Curated 100 GCC Decision-Maker Bank:</strong> Hand-verified inboxes of UAE Banking VPs, MDs, and enterprise HR leaders.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#D9551F] font-bold mt-0.5">✓</span>
+                <span><strong>Bespoke 3-Touch Sequence:</strong> High-status, observation-led copy referencing her 20 years in UAE banking.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 space-y-3">
+            <div class="p-3 rounded-xl bg-white border border-[#D9551F]/30 text-center">
+              <span class="text-xs font-mono text-[#D9551F] font-bold">
+                The Math: Just ONE new client enrolled in her $1,500 Mentorship completely pays off Phase 1 100%.
+              </span>
+            </div>
+            <a href="https://cal.com/ahmad-farooq-tuwcnw/30min" target="_blank" class="w-full py-3.5 px-6 rounded-xl bg-[#D9551F] hover:bg-[#c24614] text-white font-bold font-mono text-center block transition shadow-md">
+              LOCK IN PHASE 1 LAUNCHPAD ($1,500)
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: ONGOING MONTHLY RETAINER -->
+        <div class="card-teal rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative">
+          <div class="space-y-5">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-mono text-xs font-bold text-[#2E9C82]">PHASE 2 ONGOING PARTNERSHIP</span>
+                <span class="text-xs text-[#6B655F] font-mono">Monthly Management</span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B]">The Autopilot Client Engine</h3>
+              <p class="text-xs sm:text-sm text-[#6B655F] mt-1 leading-relaxed">
+                Ongoing management of both Inbound &amp; Outbound pipelines. Fariha shows up only for booked discovery calls with corporate leaders; Kaivex runs the machine.
+              </p>
+            </div>
+
+            <!-- Price Tag Display -->
+            <div class="p-5 rounded-2xl bg-white border border-[rgba(20,24,27,0.1)]">
+              <div class="text-xs text-[#6B655F] font-mono uppercase mb-1">Ongoing Monthly Retainer</div>
+              <div class="flex items-baseline gap-2">
+                <span id="priceRetainerVal" class="text-4xl sm:text-5xl font-extrabold text-[#14181B] tracking-tight font-serif">$1,200 USD</span>
+                <span id="priceRetainerAlt" class="text-sm text-[#6B655F] font-mono">(4,400 AED / mo)</span>
+              </div>
+              <p class="text-[11px] text-[#6B655F] font-mono mt-2">
+                Month-to-month partnership. Zero lock-in contracts; pause or adjust anytime.
+              </p>
+            </div>
+
+            <!-- Deliverables -->
+            <div class="space-y-2.5 text-xs text-[#4A443E]">
+              <div class="font-mono text-[11px] font-bold text-[#14181B] uppercase tracking-wider">Monthly Execution Scope:</div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#2E9C82] font-bold mt-0.5">✓</span>
+                <span><strong>12 Ghostwritten Authority Posts:</strong> 3 high-impact frameworks published to LinkedIn weekly based on her voice notes.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#2E9C82] font-bold mt-0.5">✓</span>
+                <span><strong>100 Fresh Verified Executive Targets / Mo:</strong> Continuous outbound expansion across UAE banking &amp; corporate heads.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#2E9C82] font-bold mt-0.5">✓</span>
+                <span><strong>DM Nurturing &amp; Booking Conversion:</strong> Converting scorecard completions and profile visitors into scheduled Zoom calls.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-[#2E9C82] font-bold mt-0.5">✓</span>
+                <span><strong>Weekly Iteration &amp; Optimization:</strong> Split-testing hooks, outreach angles, and scorecard completion rates.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 space-y-3">
+            <div class="p-3 rounded-xl bg-white border border-[#2E9C82]/30 text-center">
+              <span class="text-xs font-mono text-[#2E9C82] font-bold">
+                Target Output: 2 to 3 retained corporate executive clients per month ($3,000 to $5,000 MRR).
+              </span>
+            </div>
+            <a href="https://cal.com/ahmad-farooq-tuwcnw/30min" target="_blank" class="w-full py-3.5 px-6 rounded-xl bg-[#14181B] hover:bg-[#2A3136] text-white font-bold font-mono text-center block transition shadow-md">
+              DISCUSS ONGOING PARTNERSHIP
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 6. COLLABORATIVE NEXT STEPS BLOCK -->
+    <div class="card-base rounded-2xl p-8 bg-white border border-[rgba(20,24,27,0.1)] text-center space-y-3">
+      <div class="pill-badge bg-[#E2DAC8] text-[#14181B]">COLLABORATIVE NEXT STEPS</div>
+      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#14181B]">
+        Phase 1 Implementation Kickoff
+      </h3>
+      <p class="text-xs sm:text-sm text-[#6B655F] max-w-xl mx-auto leading-relaxed">
+        Upon confirming Phase 1, we schedule your 45-minute content extraction interview this week. Within 14 days, your entire executive client acquisition engine is built, tested, and ready for live leads.
+      </p>
+      <div class="pt-2 flex justify-center">
+        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#F8F5EE] border border-[rgba(20,24,27,0.1)] font-mono text-xs text-[#14181B]">
+          <span class="w-2 h-2 rounded-full bg-[#2E9C82] animate-pulse"></span>
+          <span>Timeline: Day 1 Kickoff &rarr; Day 7 Scorecard Ready &rarr; Day 14 Live Launch</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Clean Institutional Footer -->
+  <footer class="border-t border-[rgba(20,24,27,0.08)] py-8 px-6 text-center text-xs font-mono text-[#6B655F]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>Kaivex Systems • Enterprise Client Acquisition Infrastructure</div>
+      <div>Confidential Dossier • Prepared Exclusively for Rise with Fariha</div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Currency Switcher Script -->
+  <script>
+    let currentCurrency = 'USD';
+
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      const btnUSD = document.getElementById('btnUSD');
+      const btnAED = document.getElementById('btnAED');
+
+      const priceSprintVal = document.getElementById('priceSprintVal');
+      const priceSprintAlt = document.getElementById('priceSprintAlt');
+      const priceRetainerVal = document.getElementById('priceRetainerVal');
+      const priceRetainerAlt = document.getElementById('priceRetainerAlt');
+
+      if (curr === 'USD') {
+        btnUSD.className = 'px-2.5 py-1 rounded bg-[#14181B] text-white font-bold transition shadow-xs';
+        btnAED.className = 'px-2.5 py-1 rounded text-[#6B655F] hover:text-[#14181B] transition font-bold';
+
+        priceSprintVal.textContent = '$1,500 USD';
+        priceSprintAlt.textContent = '(5,500 AED)';
+        priceRetainerVal.textContent = '$1,200 USD';
+        priceRetainerAlt.textContent = '(4,400 AED / mo)';
+      } else {
+        btnAED.className = 'px-2.5 py-1 rounded bg-[#14181B] text-white font-bold transition shadow-xs';
+        btnUSD.className = 'px-2.5 py-1 rounded text-[#6B655F] hover:text-[#14181B] transition font-bold';
+
+        priceSprintVal.textContent = '5,500 AED';
+        priceSprintAlt.textContent = '($1,500 USD)';
+        priceRetainerVal.textContent = '4,400 AED';
+        priceRetainerAlt.textContent = '($1,200 USD / mo)';
+      }
+    }
+  </script>
+
+</body>
+</html>
