@@ -25,25 +25,26 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kaivexsystems.vercel.app"),
   title: {
-    default: "Kaivex Systems | Marketing Systems & Growth Infrastructure",
+    default: "Kaivex Systems | Digital Growth Company",
     template: "%s | Kaivex Systems",
   },
   description:
-    "Marketing systems that add 10+ qualified leads every month, consistently. Built for B2B founders, coaches, and consultants tired of referral dependency and erratic outbound.",
+    "Digital infrastructure and customer acquisition systems that scale revenue. Specialized growth divisions for e-commerce brands and local service businesses.",
   keywords: [
     "Kaivex Systems",
-    "Growth Engineering",
-    "Digital Infrastructure",
-    "B2B Marketing Systems",
-    "Client Acquisition Engine",
-    "Lead Generation Infrastructure",
-    "Speed-to-Lead Automation",
-    "LinkedIn Authority",
-    "Dedicated SMTP Outbound",
+    "Digital Growth Company",
+    "E-commerce Growth",
+    "Shopify Store Development",
+    "Shopify Optimization",
+    "Local Services Lead Generation",
+    "Local SEO",
+    "Google Business Profile Optimization",
+    "Meta Ads Management",
+    "Google Ads Management",
+    "Conversion Rate Optimization",
+    "Digital Marketing Infrastructure",
     "Ahmad Farooq",
-    "Ayaan Habib",
-    "B2B Sales Pipeline",
-    "Marketing Automation"
+    "Ayaan Habib"
   ],
   authors: [{ name: "Ahmad Farooq" }, { name: "Ayaan Habib" }],
   creator: "Kaivex Systems",
@@ -57,8 +58,8 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   openGraph: {
-    title: "Kaivex Systems | Marketing Systems & Growth Infrastructure",
-    description: "Marketing systems that add 10+ qualified leads every month, consistently.",
+    title: "Kaivex Systems | Digital Growth Company",
+    description: "Digital infrastructure and customer acquisition systems that scale revenue. E-commerce and Local Services growth divisions.",
     url: "https://kaivexsystems.vercel.app",
     siteName: "Kaivex Systems",
     locale: "en_US",
@@ -66,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kaivex Systems | Marketing Systems & Growth Infrastructure",
-    description: "Marketing systems that add 10+ qualified leads every month, consistently.",
+    title: "Kaivex Systems | Digital Growth Company",
+    description: "Digital infrastructure and customer acquisition systems that scale revenue. E-commerce and Local Services growth divisions.",
     creator: "@kaivexsystems",
   },
   robots: {
@@ -93,22 +94,22 @@ const jsonLd = {
       name: "Kaivex Systems",
       url: "https://kaivexsystems.vercel.app",
       logo: "https://kaivexsystems.vercel.app/icon.svg",
-      description: "Dual-engine marketing systems and growth infrastructure studio for B2B founders and trade contractors.",
+      description: "Digital Growth Company combining digital infrastructure, technology, marketing, and customer acquisition for e-commerce brands and local services.",
       founders: [
         {
           "@type": "Person",
           name: "Ahmad Farooq",
-          jobTitle: "Co-Founder & Systems Architect"
+          jobTitle: "Co-Founder & GTM, Strategy & Technology"
         },
         {
           "@type": "Person",
           name: "Ayaan Habib",
-          jobTitle: "Co-Founder & Growth Engineer"
+          jobTitle: "Co-Founder & Performance Marketing & Creative"
         }
       ],
       sameAs: [
         "https://www.instagram.com/kaivexsystems/",
-        "https://cal.com/ahmad-farooq-tuwcnw/15min"
+        "https://cal.com/kaivex-systems-a9a0ud/30min"
       ],
       contactPoint: {
         "@type": "ContactPoint",
@@ -135,32 +136,32 @@ const jsonLd = {
         "@id": "https://kaivexsystems.vercel.app/#organization"
       },
       serviceType: [
-        "B2B Client Acquisition Engine",
-        "Outbound Marketing Systems",
-        "Speed-to-Lead Automation",
-        "Interactive Diagnostic Funnels",
-        "Dedicated SMTP Email Infrastructure",
-        "High-Performance Marketing Websites"
+        "E-commerce Growth & Acquisition",
+        "Shopify Development & Optimization",
+        "Local Services Lead Generation",
+        "Local SEO & Google Business Profile Management",
+        "Meta & Google Ads Management",
+        "Conversion Tracking & Attribution Infrastructure"
       ],
-      areaServed: ["Global", "United States", "United Kingdom", "Canada"],
+      areaServed: ["Global", "United States", "Australia", "United Kingdom"],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Growth Infrastructure Sprints",
+        name: "Growth Infrastructure Services",
         itemListElement: [
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Sprint 1: Core Growth Engine Setup",
-              description: "Full setup of dedicated outbound infrastructure, C-suite positioning, and scorecards."
+              name: "Phase 1: Digital Foundation Sprint",
+              description: "Fixed-scope audit and implementation covering website/store development, conversion tracking, and campaign launch setup."
             }
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Sprint 2: Scale & Automated Lead Capture",
-              description: "Omni-channel routing, automated speed-to-lead dispatch, and qualification pipelines."
+              name: "Phase 2: Monthly Growth Partnership",
+              description: "Ongoing performance marketing management, creative testing, SEO/GBP optimization, and continuous storefront improvements."
             }
           }
         ]
@@ -175,23 +176,23 @@ const jsonLd = {
           name: "What is Kaivex Systems?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Kaivex Systems is a growth infrastructure studio founded by Ahmad Farooq and Ayaan Habib. We build marketing systems that consistently add 10+ qualified leads per month for B2B founders, consultants, and contractors by eliminating referral dependency."
+            text: "Kaivex Systems is a Digital Growth Company founded by Ahmad Farooq and Ayaan Habib. We combine digital infrastructure, technology, marketing, and customer acquisition to build and operate the systems required to attract customers and scale revenue."
           }
         },
         {
           "@type": "Question",
-          name: "How does Kaivex Systems generate 10+ qualified leads per month?",
+          name: "What divisions does Kaivex Systems operate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Kaivex deploys a dual-engine architecture: an interactive diagnostic scorecard funnel, C-suite authority ghostwriting, dedicated multi-domain SMTP cold email infrastructure, and automated sub-60-second speed-to-lead response pipelines."
+            text: "Kaivex operates two dedicated divisions: E-commerce Growth & Acquisition (Shopify store development, conversion optimization, Meta/Google Ads, and creative testing) and Local Services Growth & Lead Generation (high-converting local websites, Local SEO, Google Business Profile management, and high-intent local search ads)."
           }
         },
         {
           "@type": "Question",
-          name: "What makes Kaivex Systems different from traditional marketing agencies?",
+          name: "What makes Kaivex Systems different from traditional agencies?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Traditional agencies sell temporary ad spend and vanity impressions. Kaivex builds owned, persistent assets: dedicated server infrastructure, automated qualification funnels, and dispatch systems that remain your intellectual property."
+            text: "Unlike traditional agencies that sell vanity metrics and junior account management, Kaivex delivers modular, documented systems with transparent scopes, verified conversion tracking, and direct founder accountability."
           }
         },
         {
@@ -199,7 +200,7 @@ const jsonLd = {
           name: "How do I schedule a strategy consultation with Kaivex Systems?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can schedule a direct 15-minute architecture diagnostic via Cal.com at https://cal.com/ahmad-farooq-tuwcnw/15min or connect via WhatsApp at +1 (848) 400-4949."
+            text: "You can schedule a direct 30-minute growth diagnostic session via Cal.com at https://cal.com/kaivex-systems-a9a0ud/30min or connect via WhatsApp at +1 (848) 400-4949."
           }
         }
       ]

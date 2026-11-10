@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 import { CheckCircle2, Moon, Sun, Mail, MessageSquare, ArrowUpRight, ArrowRight } from 'lucide-react';
@@ -30,7 +30,7 @@ const InstagramIcon = ({ className = 'w-3.5 h-3.5', color }: { className?: strin
   </svg>
 );
 
-const BOOKING_URL = 'https://cal.com/ahmad-farooq-tuwcnw/15min';
+const BOOKING_URL = 'https://cal.com/kaivex-systems-a9a0ud/30min';
 const WHATSAPP_URL = 'https://wa.me/18484004949';
 const INSTAGRAM_URL = 'https://www.instagram.com/kaivexsystems/';
 const EMAIL = 'kaivexsystems@gmail.com';
@@ -47,6 +47,56 @@ export default function KaivexLandingPage() {
   // Starts INITIALLY in the official Light Theme per request
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const isLight = theme === 'light';
+
+  useEffect(() => {
+    (function (C: any, A: string, L: string) {
+      let p = function (a: any, ar: any) {
+        a.q.push(ar);
+      };
+      let d = C.document;
+      C.Cal =
+        C.Cal ||
+        function () {
+          let cal = C.Cal;
+          let ar = arguments;
+          if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            d.head.appendChild(d.createElement('script')).src = A;
+            cal.loaded = true;
+          }
+          if (ar[0] === L) {
+            const api: any = function () {
+              p(api, arguments);
+            };
+            const namespace = ar[1];
+            api.q = api.q || [];
+            if (typeof namespace === 'string') {
+              cal.ns[namespace] = cal.ns[namespace] || api;
+              p(cal.ns[namespace], ar);
+              p(cal, ['initNamespace', namespace]);
+            } else p(cal, ar);
+            return;
+          }
+          p(cal, ar);
+        };
+    })(window, 'https://app.cal.com/embed/embed.js', 'init');
+
+    const Cal = (window as any).Cal;
+    if (Cal) {
+      Cal('init', '30min', { origin: 'https://app.cal.com' });
+      Cal.config = Cal.config || {};
+      Cal.config.forwardQueryParams = true;
+
+      Cal.ns['30min']('inline', {
+        elementOrSelector: '#my-cal-inline-30min',
+        config: { layout: 'month_view', useSlotsViewOnSmallScreen: 'true' },
+        calLink: 'kaivex-systems-a9a0ud/30min',
+      });
+
+      Cal.ns['30min']('ui', { hideEventTypeDetails: false, layout: 'month_view' });
+    }
+  }, []);
 
   const scrollToTop = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -99,7 +149,7 @@ export default function KaivexLandingPage() {
       {/* Precision Trailing Custom Cursor Follower */}
       <CustomCursor theme={theme} />
 
-      {/* Fullscreen Fixed Interactive Dot Grid Canvas (Elastic mouse displacement across entire page) */}
+      {/* Fullscreen Fixed Interactive Dot Grid Canvas */}
       <DotGridHero theme={theme} />
 
       {/* 0. Minimal Crystal Floating Navigation Bar */}
@@ -194,7 +244,7 @@ export default function KaivexLandingPage() {
 
             {/* Sliding Arrow CTA Button in Header */}
             <SlidingArrowButton
-              href={BOOKING_URL}
+              href="#booking"
               label="Book Call"
               theme={theme}
               size="compact"
@@ -225,7 +275,7 @@ export default function KaivexLandingPage() {
               style={{ backgroundColor: c.current }}
               className="w-1.5 h-1.5 rounded-full animate-ping"
             />
-            MARKETING SYSTEMS STUDIO
+            DIGITAL GROWTH COMPANY
           </div>
 
           {/* Headline in Distinctive Serif with "Light in Motion" Continuous Luminous Typography */}
@@ -233,26 +283,26 @@ export default function KaivexLandingPage() {
             style={{ color: c.text }}
             className="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight leading-[1.1] mb-6 max-w-4xl"
           >
-            Marketing systems that add{' '}
+            Digital infrastructure and acquisition systems that{' '}
             <LuminousText
-              text="10+ qualified call bookings"
+              text="scale revenue"
               theme={theme}
-            />{' '}
-            every month, consistently.
+            />
+            , consistently.
           </h1>
 
-          {/* One-line subhead in General Sans with tightened tracking */}
+          {/* Subhead in General Sans */}
           <p
             style={{ color: c.textMuted }}
             className="text-base sm:text-lg md:text-xl font-sans font-normal leading-relaxed mb-10 max-w-2xl tracking-[-0.015em]"
           >
-            For B2B founders, coaches, and consultants tired of referral dependency and inconsistent outbound.
+            We build, optimize, and operate high-converting digital storefronts, local search infrastructure, and performance marketing systems for e-commerce brands and local service businesses.
           </p>
 
           {/* Single CTA Button with Sliding Arrow Hover Effect */}
           <SlidingArrowButton
-            href={BOOKING_URL}
-            label="Book a 15-Minute Diagnostic Call"
+            href="#booking"
+            label="Book a 30-Minute Strategy Call"
             theme={theme}
             size="default"
           />
@@ -276,12 +326,12 @@ export default function KaivexLandingPage() {
               style={{ color: c.text }}
               className="text-3xl sm:text-5xl font-serif font-bold tracking-tight mt-2"
             >
-              Why your pipeline stalls
+              Why growth stalls
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Line 1: Inconsistent Pipeline */}
+            {/* Line 1: Disconnected Operations */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
@@ -293,18 +343,18 @@ export default function KaivexLandingPage() {
                   style={{ color: c.flare }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  01 // REVENUE SWINGS
+                  01 // SILOED OPERATIONS
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Unpredictable client flow
+                  Disconnected execution
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Revenue swings from busy months to quiet months because you don&apos;t have a predictable way to bring in new clients on demand.
+                  Storefronts, ad campaigns, and creative testing operate in silos. Without unified digital infrastructure, ad spend is wasted on pages that cannot convert.
                 </p>
               </div>
             </motion.div>
 
-            {/* Line 2: Agency Bloat */}
+            {/* Line 2: Poor Conversion */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
@@ -316,18 +366,18 @@ export default function KaivexLandingPage() {
                   style={{ color: c.current }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  02 // OVERPAYING
+                  02 // LEAKING TRAFFIC
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Expensive agency bloat
+                  Traffic without conversion
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  You pay thousands to agencies with junior account managers who don&apos;t understand your business and deliver zero booked calls.
+                  Outdated websites and generic product pages fail to capture buyer intent. Cold visitors bounce before buying, booking, or submitting a qualified enquiry.
                 </p>
               </div>
             </motion.div>
 
-            {/* Line 3: Referral Dependency */}
+            {/* Line 3: Unmeasured Spend */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
@@ -339,13 +389,13 @@ export default function KaivexLandingPage() {
                   style={{ color: c.textMuted }}
                   className="font-mono text-[11px] font-bold uppercase tracking-wider block mb-3"
                 >
-                  03 // TRAPPED
+                  03 // UNATTRIBUTED SPEND
                 </span>
                 <h3 style={{ color: c.text }} className="text-xl font-serif font-bold mb-2">
-                  Relying only on referrals
+                  Unmeasured ad budgets
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Word of mouth is great, but you can&apos;t control when it happens. You need a real system bringing qualified buyers to you every week.
+                  Ad spend allocated on guesswork instead of verified conversion tracking. You pay for clicks without clear attribution of where profitable revenue originates.
                 </p>
               </div>
             </motion.div>
@@ -353,7 +403,7 @@ export default function KaivexLandingPage() {
         </motion.div>
       </section>
 
-      {/* 3. OFFER SECTION (3 bullet points, 10+ qualified call bookings framing) */}
+      {/* 3. OFFER SECTION (Core Business Divisions) */}
       <section
         style={{ borderColor: c.border }}
         className="py-20 px-4 max-w-4xl mx-auto border-t relative z-10"
@@ -364,18 +414,18 @@ export default function KaivexLandingPage() {
               style={{ color: c.current }}
               className="font-mono text-xs font-bold uppercase tracking-widest"
             >
-              THE SOLUTION
+              THE DIVISIONS
             </span>
             <h2
               style={{ color: c.text }}
               className="text-3xl sm:text-5xl font-serif font-bold tracking-tight mt-2"
             >
-              Everything built to deliver 10+ qualified call bookings every month
+              Engineered systems for predictable customer acquisition
             </h2>
           </div>
 
           <div className="space-y-4">
-            {/* Bullet 1: Fast High Converting Website */}
+            {/* Division 1: E-commerce Growth & Acquisition */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -393,15 +443,15 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Fast, High-Converting Website
+                  E-commerce Growth &amp; Acquisition
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  Clean, modern websites built to turn cold visitors into booked client meetings without confusing forms or fluff.
+                  For established Shopify and DTC brands already generating sales and preparing to scale. Custom storefront development, conversion-engineered product pages, full-funnel Meta &amp; Google Ads management, and continuous creative testing.
                 </p>
               </div>
             </motion.div>
 
-            {/* Bullet 2: Pre-Call Qualification */}
+            {/* Division 2: Local Services Growth & Lead Gen */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -419,15 +469,15 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Pre-Call Client Qualification
+                  Local Services Growth &amp; Lead Generation
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  A simple 2-minute questionnaire asks their budget and needs before they book, so you only talk to real buyers with real budgets.
+                  For established local service businesses (HVAC, Roofing, and service contractors). Sub-second service websites, Google Business Profile &amp; local search ranking dominance, high-intent local search campaigns, and streamlined enquiry pathways.
                 </p>
               </div>
             </motion.div>
 
-            {/* Bullet 3: Done-For-You Outreach */}
+            {/* Division 3: Modular Foundation & Monthly Growth */}
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
@@ -445,10 +495,10 @@ export default function KaivexLandingPage() {
               </div>
               <div>
                 <h3 style={{ color: c.text }} className="text-lg sm:text-xl font-serif font-bold mb-1">
-                  Done-For-You LinkedIn &amp; Email Outreach
+                  Modular Foundation &amp; Ongoing Growth Partnership
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs sm:text-sm font-sans leading-relaxed tracking-[-0.012em]">
-                  We write your LinkedIn authority posts and send targeted emails directly to your ideal buyers, consistently booking 10+ qualified calls on your calendar every month.
+                  A structured two-phase engagement: Phase 1 establishes the fixed-scope technical foundation (store/site build, tracking, and campaign launch); Phase 2 delivers ongoing performance marketing and continuous optimization without agency bloat.
                 </p>
               </div>
             </motion.div>
@@ -478,7 +528,7 @@ export default function KaivexLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {/* Item 1: Series A EdTech Founder */}
+            {/* Item 1: Series A Founder */}
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
@@ -493,10 +543,10 @@ export default function KaivexLandingPage() {
                   $300K
                 </div>
                 <h3 style={{ color: c.text }} className="text-base font-serif font-bold mb-2">
-                  Series A EdTech Founder
+                  Series A Founder
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs font-sans leading-relaxed tracking-[-0.012em]">
-                  Attributed pipeline built via organic LinkedIn authority and landing architecture.
+                  Attributed pipeline built via authority positioning and conversion-engineered landing architecture.
                 </p>
               </div>
             </motion.div>
@@ -519,7 +569,7 @@ export default function KaivexLandingPage() {
                   ARKA Platform
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs font-sans leading-relaxed tracking-[-0.012em]">
-                  Full-stack agency operations dashboard, built and deployed in under 24 hours.
+                  Full-stack operations dashboard and digital infrastructure, built and deployed in under 24 hours.
                 </p>
               </div>
             </motion.div>
@@ -542,7 +592,7 @@ export default function KaivexLandingPage() {
                   Coin Bureau
                 </h3>
                 <p style={{ color: c.textMuted }} className="text-xs font-sans leading-relaxed tracking-[-0.012em]">
-                  Cross-platform funnel strategy (YouTube/Instagram to newsletter to academy) for a 2M+ audience brand.
+                  Cross-platform funnel strategy and conversion pathways for a 2M+ audience brand.
                 </p>
               </div>
             </motion.div>
@@ -560,7 +610,7 @@ export default function KaivexLandingPage() {
         </motion.div>
       </div>
 
-      {/* 6. HOW IT WORKS (Feature Carousel Steps from Recording) */}
+      {/* 6. HOW IT WORKS (Feature Carousel Steps) */}
       <section
         style={{ borderColor: c.border }}
         className="py-20 px-4 max-w-4xl mx-auto border-t relative z-10"
@@ -586,42 +636,62 @@ export default function KaivexLandingPage() {
         </motion.div>
       </section>
 
-      {/* 6. FINAL CTA SECTION */}
+      {/* 7. BOOKING SECTION WITH INLINE CAL EMBED */}
       <section
+        id="booking"
         style={{ borderColor: c.border }}
-        className="relative py-28 px-4 max-w-4xl mx-auto border-t text-center overflow-hidden"
+        className="relative py-24 px-4 max-w-4xl mx-auto border-t text-center overflow-hidden z-10"
       >
         <motion.div {...sectionMotion} className="relative z-10 flex flex-col items-center">
           <span
             style={{ color: c.flare }}
             className="font-mono text-xs font-bold uppercase tracking-widest mb-3"
           >
-            READY TO DEPLOY
+            SCHEDULE A CONSULTATION
           </span>
           <h2
             style={{ color: c.text }}
             className="text-3xl sm:text-5xl font-serif font-bold tracking-tight mb-4 max-w-2xl leading-[1.15]"
           >
-            Ready to add 10+ qualified call bookings every month?
+            Book a 30-minute growth diagnostic
           </h2>
           <p
             style={{ color: c.textMuted }}
             className="text-sm sm:text-base font-sans max-w-lg mb-8 leading-relaxed tracking-[-0.015em]"
           >
-            Zero sales pitch. We look at your current numbers and show you how to start booking high-paying clients consistently.
+            Zero sales pitch. We audit your current digital presence, evaluate your acquisition channels, and map the exact infrastructure required to scale.
           </p>
 
-          {/* Sliding Arrow CTA Button */}
-          <SlidingArrowButton
-            href={BOOKING_URL}
-            label="Book a 15-Minute Diagnostic Call"
-            theme={theme}
-            size="default"
-          />
+          {/* Cal inline embed container */}
+          <div
+            style={{
+              backgroundColor: isLight ? 'rgba(255, 255, 255, 0.6)' : 'rgba(18, 26, 33, 0.6)',
+              borderColor: c.border,
+            }}
+            className="w-full min-h-[640px] rounded-2xl border p-2 sm:p-4 shadow-xl backdrop-blur-sm overflow-hidden mb-6"
+          >
+            <div
+              id="my-cal-inline-30min"
+              className="w-full h-full min-h-[600px] overflow-auto"
+            />
+          </div>
+
+          <p className="text-xs font-mono" style={{ color: c.textMuted }}>
+            Prefer a direct link?{' '}
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-semibold hover:opacity-80 transition"
+              style={{ color: c.flare }}
+            >
+              Open Cal.com in a new tab &rarr;
+            </a>
+          </p>
         </motion.div>
       </section>
 
-      {/* 7. FOOTER */}
+      {/* 8. FOOTER */}
       <footer
         style={{
           backgroundColor: c.footerBg,

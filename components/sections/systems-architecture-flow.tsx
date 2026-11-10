@@ -3,32 +3,16 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import {
-  Mail,
-  Filter,
-  Calendar,
-  Zap,
-  CheckCircle2,
-  ShieldCheck,
-  ArrowRight,
+  ShoppingBag,
+  Search,
   Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  Layers,
+  TrendingUp,
+  BarChart3,
+  Globe,
 } from 'lucide-react';
-
-const LinkedinIcon = ({ className = 'w-4 h-4', style }: { className?: string; style?: React.CSSProperties }) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-    style={style}
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
 
 interface SystemsArchitectureFlowProps {
   theme?: 'light' | 'dark';
@@ -81,7 +65,7 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
           How the growth infrastructure operates
         </h2>
         <p style={{ color: c.textMuted }} className="max-w-2xl mx-auto text-sm sm:text-base font-sans leading-relaxed">
-          An engineered, automated pipeline converting cold market signals into booked, pre-qualified C-suite calls.
+          An engineered architecture connecting customer acquisition channels, conversion-optimized web infrastructure, and reliable revenue measurement.
         </p>
       </div>
 
@@ -93,10 +77,10 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
           <div className="lg:col-span-3 space-y-3">
             <div className="text-xs font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-2" style={{ color: c.textMuted }}>
               <span className="w-2 h-2 rounded-full" style={{ backgroundColor: c.flare }} />
-              01 // Outbound &amp; Inbound Signals
+              01 // Acquisition Channels
             </div>
 
-            {/* Input Card A: Dedicated SMTP */}
+            {/* Input Card A: Performance Ads */}
             <div
               onMouseEnter={() => setActiveNode(1)}
               onMouseLeave={() => setActiveNode(null)}
@@ -105,18 +89,18 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
             >
               <div className="flex items-center gap-2.5 mb-1.5">
                 <div className="p-1.5 rounded-lg" style={{ backgroundColor: isLight ? 'rgba(217,85,31,0.1)' : 'rgba(255,122,71,0.15)' }}>
-                  <Mail style={{ color: c.flare }} className="w-4 h-4" />
+                  <ShoppingBag style={{ color: c.flare }} className="w-4 h-4" />
                 </div>
                 <h4 style={{ color: c.text }} className="text-sm font-serif font-bold">
-                  Dedicated Multi-Domain SMTP
+                  Meta &amp; Google Ads
                 </h4>
               </div>
               <p style={{ color: c.textMuted }} className="text-xs font-sans">
-                Secondary domain isolation with 99.4% inbox delivery algorithms.
+                Full-funnel campaign management and retargeting aligned with unit economics.
               </p>
             </div>
 
-            {/* Input Card B: LinkedIn Authority */}
+            {/* Input Card B: Local Search & GBP */}
             <div
               onMouseEnter={() => setActiveNode(2)}
               onMouseLeave={() => setActiveNode(null)}
@@ -125,18 +109,18 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
             >
               <div className="flex items-center gap-2.5 mb-1.5">
                 <div className="p-1.5 rounded-lg" style={{ backgroundColor: isLight ? 'rgba(46,156,130,0.1)' : 'rgba(143,224,206,0.15)' }}>
-                  <LinkedinIcon style={{ color: c.current }} className="w-4 h-4" />
+                  <Search style={{ color: c.current }} className="w-4 h-4" />
                 </div>
                 <h4 style={{ color: c.text }} className="text-sm font-serif font-bold">
-                  C-Suite Authority Ghostwriting
+                  Local SEO &amp; Google Business
                 </h4>
               </div>
               <p style={{ color: c.textMuted }} className="text-xs font-sans">
-                Algorithmic organic distribution targeting active founders and decision-makers.
+                Local keyword dominance, citation strategy, and high-intent local search ads.
               </p>
             </div>
 
-            {/* Input Card C: Speed-to-Lead Inbound */}
+            {/* Input Card C: Creative Strategy & Testing */}
             <div
               onMouseEnter={() => setActiveNode(3)}
               onMouseLeave={() => setActiveNode(null)}
@@ -145,14 +129,14 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
             >
               <div className="flex items-center gap-2.5 mb-1.5">
                 <div className="p-1.5 rounded-lg" style={{ backgroundColor: isLight ? 'rgba(217,85,31,0.1)' : 'rgba(255,122,71,0.15)' }}>
-                  <Zap style={{ color: c.flare }} className="w-4 h-4" />
+                  <Sparkles style={{ color: c.flare }} className="w-4 h-4" />
                 </div>
                 <h4 style={{ color: c.text }} className="text-sm font-serif font-bold">
-                  Sub-60s Inbound Dispatch
+                  Creative Strategy &amp; Testing
                 </h4>
               </div>
               <p style={{ color: c.textMuted }} className="text-xs font-sans">
-                Instant SMS and VoIP auto-textback engaging leads while intent is hottest.
+                Consistent ad creative production and messaging iterations that combat ad fatigue.
               </p>
             </div>
           </div>
@@ -188,7 +172,7 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
 
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-mono font-bold uppercase tracking-wider" style={{ color: c.current }}>
-                  QUALIFICATION ENGINE
+                  CONVERSION FOUNDATION
                 </span>
                 <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                   Active
@@ -197,26 +181,26 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
 
               {/* Engine Inner Feature 1 */}
               <div className="flex items-start gap-3 p-3 rounded-lg border border-black/5 dark:border-white/5 bg-black/[0.02] dark:bg-white/[0.02]">
-                <Filter style={{ color: c.flare }} className="w-4 h-4 shrink-0 mt-0.5" />
+                <Layers style={{ color: c.flare }} className="w-4 h-4 shrink-0 mt-0.5" />
                 <div>
                   <h5 style={{ color: c.text }} className="text-xs font-bold font-sans">
-                    Interactive Scorecard Logic
+                    Storefront &amp; Website Architecture
                   </h5>
                   <p style={{ color: c.textMuted }} className="text-[11px] leading-tight mt-0.5">
-                    Prospects complete a 6-point diagnostic auditing revenue, stack, and bottlenecks.
+                    Custom Shopify stores and local service sites engineered for sub-second speed and maximum conversion.
                   </p>
                 </div>
               </div>
 
               {/* Engine Inner Feature 2 */}
               <div className="flex items-start gap-3 p-3 rounded-lg border border-black/5 dark:border-white/5 bg-black/[0.02] dark:bg-white/[0.02]">
-                <ShieldCheck style={{ color: c.current }} className="w-4 h-4 shrink-0 mt-0.5" />
+                <Globe style={{ color: c.current }} className="w-4 h-4 shrink-0 mt-0.5" />
                 <div>
                   <h5 style={{ color: c.text }} className="text-xs font-bold font-sans">
-                    Tire-Kicker Elimination Gate
+                    Enquiry &amp; Checkout Flow
                   </h5>
                   <p style={{ color: c.textMuted }} className="text-[11px] leading-tight mt-0.5">
-                    Strict budget and qualification thresholds ensure zero wasted founder hours.
+                    Frictionless checkout paths and dedicated enquiry forms with seamless lead routing.
                   </p>
                 </div>
               </div>
@@ -235,7 +219,7 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
           <div className="lg:col-span-3 space-y-3">
             <div className="text-xs font-mono uppercase tracking-wider font-bold mb-1 flex items-center gap-2" style={{ color: c.textMuted }}>
               <span className="w-2 h-2 rounded-full" style={{ backgroundColor: c.current }} />
-              03 // The Revenue Outcome
+              03 // Revenue &amp; Attribution
             </div>
 
             <div
@@ -244,14 +228,14 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
             >
               <div className="flex items-center gap-2.5">
                 <div className="p-2 rounded-lg" style={{ backgroundColor: isLight ? 'rgba(46,156,130,0.1)' : 'rgba(143,224,206,0.15)' }}>
-                  <Calendar style={{ color: c.current }} className="w-5 h-5" />
+                  <TrendingUp style={{ color: c.current }} className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-wider block" style={{ color: c.current }}>
                     Direct Outcome
                   </span>
                   <h4 style={{ color: c.text }} className="text-base font-serif font-bold">
-                    10+ Qualified B2B Calls
+                    Predictable Revenue &amp; Pipeline
                   </h4>
                 </div>
               </div>
@@ -259,15 +243,15 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
               <ul className="space-y-2 text-xs font-sans" style={{ color: c.textMuted }}>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 style={{ color: c.current }} className="w-3.5 h-3.5 shrink-0" />
-                  <span>Calendar pre-synced with Cal.com</span>
+                  <span>Clean conversion tracking &amp; reporting</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 style={{ color: c.current }} className="w-3.5 h-3.5 shrink-0" />
-                  <span>Diagnostic answers delivered before the call</span>
+                  <span>Qualified buyer enquiries &amp; customer orders</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 style={{ color: c.current }} className="w-3.5 h-3.5 shrink-0" />
-                  <span>Zero cold pitch fatigue</span>
+                  <span>Modular scope aligned with unit economics</span>
                 </li>
               </ul>
 
@@ -275,9 +259,9 @@ export function SystemsArchitectureFlow({ theme = 'light' }: SystemsArchitecture
                 className="pt-3 border-t text-[11px] font-mono flex items-center justify-between"
                 style={{ borderColor: c.cardBorder }}
               >
-                <span style={{ color: c.textMuted }}>Monthly Yield:</span>
+                <span style={{ color: c.textMuted }}>Operating Principle:</span>
                 <span className="font-bold text-xs" style={{ color: c.flare }}>
-                  10 - 18 Qualified Ops
+                  Repeatable Systems
                 </span>
               </div>
             </div>

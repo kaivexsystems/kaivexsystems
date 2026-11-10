@@ -1,42 +1,47 @@
 # Kaivex Systems
 
-> Dual-engine growth infrastructure and marketing systems designed to add 10+ qualified leads every month for B2B founders, coaches, consultants, and trade contractors.
+> Digital Growth Company combining digital infrastructure, technology, marketing, and customer acquisition to build and operate the systems required to attract customers and scale revenue.
 
 ## Overview
-Kaivex Systems (founded by Ahmad Farooq and Ayaan Habib) engineers custom acquisition infrastructure that eliminates referral dependency and erratic sales pipelines. Rather than vanity metrics or surface-level marketing, Kaivex develops and deploys operational growth assets.
+Kaivex Systems (founded by Ahmad Farooq and Ayaan Habib) is a Digital Growth Company. Rather than operating as a general-purpose marketing agency, Kaivex develops focused service divisions around specific customer segments: established E-commerce brands and local service businesses.
 
-## Core Growth Engines
+## Core Business Divisions
 
-### 1. B2B Client Acquisition Engine
-- **Target Audience**: B2B Founders, SaaS executives, Agencies, High-Ticket Coaches, and Specialized Consultants.
-- **Core Infrastructure**:
-  - Interactive scorecard and diagnostic evaluation funnels.
-  - C-suite authority ghostwriting and thought leadership positioning (e.g., LinkedIn).
-  - Dedicated multi-domain SMTP outbound infrastructure with guaranteed deliverability.
-  - Automated omni-channel follow-up sequences.
-- **Outcome**: 10+ high-intent qualified sales calls booked each month without cold calling grind.
+### 1. E-commerce Growth & Acquisition
+- **Target Audience**: Established Shopify and direct-to-consumer (DTC) brands already generating sales and preparing to scale.
+- **Core Infrastructure & Services**:
+  - Custom Shopify storefront development, redesign, and optimization.
+  - Conversion-engineered product pages and UX optimization.
+  - Full-funnel Meta & Google Ads strategy, campaign setup, and optimization.
+  - Continuous advertising creative production and testing.
+  - End-to-end conversion tracking, analytics, and retention systems.
+- **Outcome**: Measurable improvement in customer acquisition, lower CPA, and profitable online sales growth.
 
-### 2. Trade Contractors Speed-to-Lead Engine
-- **Target Audience**: HVAC, Roofing, Plumbing, Electrical, and Specialized Trade Contractors.
-- **Core Infrastructure**:
-  - Sub-60-second automated speed-to-lead response pipelines.
-  - Missed-call AI auto-textback dispatch.
-  - Cloud VoIP and Twilio-powered smart call routing.
-  - Dedicated outbound caller dispatch operations.
-- **Outcome**: Captures inbound demand instantly before competitors, maximizing job quote conversion.
+### 2. Local Services Growth & Lead Generation
+- **Target Audience**: Established local service businesses (initially prioritizing HVAC and Roofing companies; expanding to plumbing, electrical, and field contractors).
+- **Core Infrastructure & Services**:
+  - High-performance, mobile-optimized local service website development.
+  - Google Business Profile (GBP) optimization and Local SEO dominance.
+  - High-intent local Google Ads search campaigns.
+  - Streamlined enquiry pathways, forms, and lead tracking.
+- **Outcome**: Dominant local visibility, stronger website conversion, and a reliable flow of qualified customer enquiries.
+
+## Engagement Model
+- **Phase 1: Digital Foundation Sprint**: Fixed-scope audit and implementation covering store/website restructuring, conversion tracking, and initial campaign launch setup.
+- **Phase 2: Monthly Growth Partnership**: Ongoing performance marketing, creative testing, SEO/GBP management, and continuous storefront improvements.
 
 ## Key People & Founders
-- **Ahmad Farooq**: Co-Founder & Systems Architect
-- **Ayaan Habib**: Co-Founder & Growth Engineer
+- **Ahmad Farooq**: Co-Founder & GTM, Strategy & Technology
+- **Ayaan Habib**: Co-Founder & Performance Marketing & Creative
 
 ## Contact & Official Channels
 - **Website**: https://kaivexsystems.vercel.app
-- **Booking**: https://cal.com/ahmad-farooq-tuwcnw/15min
+- **Booking**: https://cal.com/kaivex-systems-a9a0ud/30min
 - **Email**: kaivexsystems@gmail.com
 - **WhatsApp**: +1 (848) 400-4949 (https://wa.me/18484004949)
 - **Instagram**: @kaivexsystems (https://www.instagram.com/kaivexsystems/)
-- **Locations**: Lahore & Parlin, New Jersey
 
-## Frequently Asked Questions (FAQ)
-- **What makes Kaivex Systems different?** Kaivex builds persistent, owned infrastructure (dedicated SMTP, automated routing, custom diagnostic funnels) rather than temporary ad campaigns or vanity follower tactics.
-- **What is the typical ramp-up timeline?** Initial infrastructure deployment and validation sprints complete within 14 to 30 days.
+## Operating Principles
+- **Clear Ownership**: Every department, task, and client deliverable has a dedicated owner.
+- **Repeatable Systems**: Documented, measurable processes built for consistent execution.
+- **No AI Slop**: Substantive deliverables, verified attribution, transparent scopes, and zero marketing hype.

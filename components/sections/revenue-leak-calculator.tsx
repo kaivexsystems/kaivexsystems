@@ -206,7 +206,7 @@ export function RevenueLeakCalculator() {
 
             <div>
               <a
-                href="https://cal.com/ahmad-farooq-tuwcnw/15min"
+                href="https://cal.com/kaivex-systems-a9a0ud/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={triggerCelebration}

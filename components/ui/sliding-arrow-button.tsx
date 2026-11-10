@@ -48,11 +48,13 @@ export function SlidingArrowButton({
         shadowHover: '0 8px 32px rgba(255, 122, 71, 0.35)',
       };
 
+  const isInternal = href.startsWith('#');
+
   return (
     <motion.a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={isInternal ? undefined : '_blank'}
+      rel={isInternal ? undefined : 'noopener noreferrer'}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       whileTap={{ scale: 0.98 }}

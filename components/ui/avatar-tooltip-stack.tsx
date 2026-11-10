@@ -13,13 +13,13 @@ interface TeamMember {
 const team: TeamMember[] = [
   {
     name: 'Ahmad Farooq',
-    role: 'Full-Stack Builder & Strategist',
+    role: 'GTM, Strategy & Technology',
     initials: 'AF',
     bgGradient: 'from-[#D9551F] to-[#FF7A47]',
   },
   {
     name: 'Ayaan Habib',
-    role: 'Growth Architecture & Operations',
+    role: 'Performance Marketing & Creative',
     initials: 'AH',
     bgGradient: 'from-[#2E9C82] to-[#8FE0CE]',
   },
@@ -88,10 +88,6 @@ export function AvatarTooltipStack({ theme = 'light', className = '' }: AvatarTo
           );
         })}
       </div>
-
-      <span className="text-[11px] font-mono opacity-70 tracking-wider">
-        Solo senior execution &bull; Zero junior handoffs
-      </span>
     </div>
   );
 }
