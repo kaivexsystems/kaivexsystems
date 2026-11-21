@@ -1,47 +1,29 @@
 # Kaivex Systems
 
-> Digital Growth Company combining digital infrastructure, technology, marketing, and customer acquisition to build and operate the systems required to attract customers and scale revenue.
+> Kaivex Systems is a digital growth company founded by Ahmad Farooq and Ayaan Habib. It builds Shopify storefronts and customer acquisition systems (paid ads, creative testing, conversion tracking, email) for established e-commerce and direct-to-consumer brands. A secondary offer covers local service businesses such as HVAC and roofing companies.
 
-## Overview
-Kaivex Systems (founded by Ahmad Farooq and Ayaan Habib) is a Digital Growth Company. Rather than operating as a general-purpose marketing agency, Kaivex develops focused service divisions around specific customer segments: established E-commerce brands and local service businesses.
+## Quick facts
+- Primary audience: established Shopify and DTC brands that already have a validated product and sales, and want to scale, fix conversion or launch a product.
+- Secondary audience: established local service businesses, starting with HVAC and roofing.
+- Markets: United States and Australia, plus the United Kingdom and other markets by agreement.
+- Engagement model: Phase 1 is a fixed-scope foundation (audit, store improvements, tracking, campaign setup, creative direction). Phase 2 is an optional monthly growth partnership.
+- Pricing principles: no performance-based pricing; ad spend is paid by the client directly to platforms and is separate from fees; scope is agreed before work starts.
+- Exclusions: advertising spend, inventory, fulfilment and customer support unless separately agreed.
+- Team: Ahmad Farooq (GTM, strategy and technology) and Ayaan Habib (performance marketing and creative). Each client has one account lead and one supporting founder.
+- Proof: concept projects are always labelled as concept projects. Client case studies are published only with client approval.
+- Contact: kaivexsystems@gmail.com, WhatsApp +1 848 400 4949, booking at https://cal.com/kaivex-systems-a9a0ud/30min
 
-## Core Business Divisions
+## Pages
+- [Home](https://kaivexsystems.vercel.app/): overview, ad profit simulator, process, FAQ
+- [E-commerce growth](https://kaivexsystems.vercel.app/ecommerce): Shopify and conversion, performance marketing, creative, retention; who it is for and not for
+- [Local services](https://kaivexsystems.vercel.app/local-services): websites, local SEO, Google Business Profile, Google Ads for HVAC and roofing
+- [Work](https://kaivexsystems.vercel.app/work): labelled concept teardowns and sample strategy deliverables
+- [Process](https://kaivexsystems.vercel.app/process): audit, foundation build, monthly partnership
+- [About](https://kaivexsystems.vercel.app/about): founders, operating principles, company facts
+- [Free store audit](https://kaivexsystems.vercel.app/audit): 12-question self-check that scores a Shopify store and lists what to fix first
+- [Book a call](https://kaivexsystems.vercel.app/book): free growth call
 
-### 1. E-commerce Growth & Acquisition
-- **Target Audience**: Established Shopify and direct-to-consumer (DTC) brands already generating sales and preparing to scale.
-- **Core Infrastructure & Services**:
-  - Custom Shopify storefront development, redesign, and optimization.
-  - Conversion-engineered product pages and UX optimization.
-  - Full-funnel Meta & Google Ads strategy, campaign setup, and optimization.
-  - Continuous advertising creative production and testing.
-  - End-to-end conversion tracking, analytics, and retention systems.
-- **Outcome**: Measurable improvement in customer acquisition, lower CPA, and profitable online sales growth.
-
-### 2. Local Services Growth & Lead Generation
-- **Target Audience**: Established local service businesses (initially prioritizing HVAC and Roofing companies; expanding to plumbing, electrical, and field contractors).
-- **Core Infrastructure & Services**:
-  - High-performance, mobile-optimized local service website development.
-  - Google Business Profile (GBP) optimization and Local SEO dominance.
-  - High-intent local Google Ads search campaigns.
-  - Streamlined enquiry pathways, forms, and lead tracking.
-- **Outcome**: Dominant local visibility, stronger website conversion, and a reliable flow of qualified customer enquiries.
-
-## Engagement Model
-- **Phase 1: Digital Foundation Sprint**: Fixed-scope audit and implementation covering store/website restructuring, conversion tracking, and initial campaign launch setup.
-- **Phase 2: Monthly Growth Partnership**: Ongoing performance marketing, creative testing, SEO/GBP management, and continuous storefront improvements.
-
-## Key People & Founders
-- **Ahmad Farooq**: Co-Founder & GTM, Strategy & Technology
-- **Ayaan Habib**: Co-Founder & Performance Marketing & Creative
-
-## Contact & Official Channels
-- **Website**: https://kaivexsystems.vercel.app
-- **Booking**: https://cal.com/kaivex-systems-a9a0ud/30min
-- **Email**: kaivexsystems@gmail.com
-- **WhatsApp**: +1 (848) 400-4949 (https://wa.me/18484004949)
-- **Instagram**: @kaivexsystems (https://www.instagram.com/kaivexsystems/)
-
-## Operating Principles
-- **Clear Ownership**: Every department, task, and client deliverable has a dedicated owner.
-- **Repeatable Systems**: Documented, measurable processes built for consistent execution.
-- **No AI Slop**: Substantive deliverables, verified attribution, transparent scopes, and zero marketing hype.
+## Common questions
+- Who is Kaivex a good fit for? Established Shopify or DTC brands with validated products and real sales. Brands with no sales yet are usually too early.
+- Does Kaivex charge a percentage of ad spend or revenue? No. There is no performance-based pricing for now.
+- Do clients have to buy every service? No. Services are modular and scoped to what the store needs.
